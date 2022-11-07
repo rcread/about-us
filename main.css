@@ -1,0 +1,227 @@
+body {
+    font-family: Karla Regular;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0px;
+}
+
+header {
+    height: 48px;
+}
+
+@media (min-width:768px) {
+    header {
+        height: 56px;
+    }
+}
+
+@media (min-width:1024px) {
+    header {
+        height: 125px;
+    }
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
+
+@media (min-width:1024px) {
+    .menu {
+        display: none;
+    }
+}
+
+.heading {
+    line-height: 20px;
+    color: #191919;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    position: relative;
+    height: 48px;
+}
+
+@media (min-width:768px) {
+    .heading {
+        height: 56px;
+    }
+}
+
+@media (min-width:1024px) {
+    .heading {
+        line-height: 24px;
+        height: 61px;
+    }
+}
+
+.nav-column {
+    width: 33.33%;
+}
+
+.nav-controls {
+    text-align-last: right;
+}
+
+.nav-option {
+    margin: 14px 56px 0px 0px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    height: 20px;
+    text-align: center;
+}
+
+@media (min-width:768px) {
+    .nav-option {
+        margin: 16px 56px 0px 0px;
+    }
+}
+
+@media (min-width:1024px) {
+    .nav-option {
+        margin: 24px 16px 0px 0px;
+        height: 24px;
+    }
+}
+
+.create-list {
+    background: #142D3B;
+    color: white;
+    text-transform: uppercase;
+    width: 94px;
+    padding: 4px 16px;
+    margin-right: 32px;
+}
+/* Is this ok to make the breakpoint 1023 instead of 1024? Same for a few media queries below. No opposite for display:none to make it min-width:1024*/
+@media (max-width:1023px) {
+    .create-list, .find-couple {
+        display: none;
+    }
+}
+
+.create-list-text {
+    text-align: center;
+}
+
+.menu-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    overflow: auto;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.link {
+    border-bottom: 1px solid white;
+    white-space: nowrap;
+}
+
+.link:hover {
+    border-bottom: 1px solid #FF6B64;
+}
+
+.menu-bar-l {
+
+}
+
+@media (max-width:1023px) {
+    .menu-bar-l {
+        display: none;
+    }
+}
+
+@media (min-width:1264px) {
+    .menu-bar-l {
+        display: none;
+    }
+}
+
+.menu-bar-xl {
+    margin:32px 108px 12px;
+}
+
+@media (max-width:1263px) {
+    .menu-bar-xl {
+        display: none;
+    }
+}
+
+.menu-item-l {
+    padding: 20px 4px 12px;
+}
+
+.menu-item-xl {
+    margin: 0px 32px;
+    
+}
+
+@media (min-width:1024px) {
+    .create-list-btn {
+        left: 866px;
+    }      
+}
+
+@media (min-width:1264px) {
+    .create-list-btn {
+        left: 1106px;
+    }
+}
+
+.search-icon {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 17px 0px 7px 17px;
+}
+
+@media (min-width:768px) {
+    .search-icon {
+        margin: 21px 0px 7px 17px;
+    }
+}
+
+@media (min-width:1024px) {
+    .search-icon {
+        margin: 33px 0px 16px 33px;
+    }           
+}
+
+.menu-icon {
+    margin: 16px 16px 0px;
+}
+
+@media (min-width:768px) {
+    .menu-icon {
+    margin: 19px 16px 0px;
+    }
+}
+
+.tws-logo {
+    height: 23px;
+    width: 117px;
+    margin: 16px 0px 12px;
+}
+
+@media (min-width:1023px) {
+    .tws-logo {
+        width: 220px;
+        height: 45px;
+    }    
+}
