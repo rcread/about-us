@@ -1,24 +1,21 @@
-/* I have kept this file in just incase I have messed up the scss but have commented out the link on index.html so that only the style css and scss are used. */
+$tws_black: #191919;
+$tws_white: #FFFFFF;
+$tws_blue: #142D3B;
+$tws_coral: #FF6B64;
 
-/* Have left this in as it was messing with sizing - should I add a class name to the body tag? */
-body {
-    margin: 0px;
-}
+$font-regular: 'Karla Regular';
+$nav-font-size: 14px;
 
 .header {
     height: 48px;
     font-weight: 400;
-    font-size: 14px;
-}
+    font-size: $nav-font-size;
 
-@media (min-width: 768px) {
-    .header {
+    @media (min-width: 768px) {
         height: 56px;
     }
-}
 
-@media (min-width: 1024px) {
-    .header {
+    @media (min-width: 1024px) {
         height: 125px;
     }
 }
@@ -28,17 +25,15 @@ body {
     top: 0;
     right: 0;
     margin: 0;
-}
 
-@media (min-width: 1024px) {
-    .menu {
+    @media (min-width: 1024px) {
         display: none;
     }
 }
 
 .heading {
     line-height: 20px;
-    color: #191919;
+    color: $tws_black;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -46,17 +41,13 @@ body {
     width: 100%;
     position: relative;
     height: 48px;
-    font-family: Karla Regular;
-}
+    font-family: $font-regular;
 
-@media (min-width: 768px) {
-    .heading {
+    @media (min-width: 768px) {
         height: 56px;
     }
-}
 
-@media (min-width: 1024px) {
-    .heading {
+    @media (min-width: 1024px) {
         line-height: 24px;
         height: 61px;
     }
@@ -84,24 +75,27 @@ body {
     cursor: pointer;
     height: 20px;
     text-align: center;
-}
+    margin: 14px 56px 0px 0px;
 
-@media (min-width: 768px) {
-    .nav-option {
+    @media (min-width:768px) {
         margin: 16px 56px 0px 0px;
     }
-}
 
-@media (min-width: 1024px) {
-    .nav-option {
+    @media (min-width: 1024px) {
         margin: 24px 16px 0px 0px;
         height: 24px;
     }
 }
 
+.link {
+    cursor: pointer;
+
+    &:hover { border-bottom: 1px solid $tws_coral; }
+}
+
 .create-list {
-    background: #142D3B;
-    color: white;
+    background: $tws_blue;
+    color: $tws_white;
     text-transform: uppercase;
     width: 94px;
     padding: 4px 16px;
@@ -110,10 +104,8 @@ body {
 
 .create-list, .find-couple {
     display: none;
-}
 
-@media (min-width: 1024px) {
-    .create-list, .find-couple {
+    @media (min-width: 1024px) {
         display: inline-block;
     }
 }
@@ -124,15 +116,13 @@ body {
 
 .menu-bar {
     display: none;
-}
 
-@media (min-width: 1024px) {
-    .menu-bar {
+    @media (min-width: 1024px) {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0;
-        font-family: Karla Regular;
+        font-family: $font-regular;
     }
 }
 
@@ -153,26 +143,20 @@ body {
     height: 15px;
     width: 15px;
     margin: 17px 0px 7px 17px;
-}
 
-@media (min-width: 768px) {
-    .search-icon {
+    @media (min-width: 768px) {
         margin: 21px 0px 7px 17px;
     }
-}
-
-@media (min-width: 1024px) {
-    .search-icon {
-        margin: 33px 0px 16px 33px;
-    }           
+    
+    @media (min-width: 1024px) {
+        margin: 33px 0px 16px 33px;       
+    }
 }
 
 .menu-icon {
     margin: 16px 16px 0px;
-}
 
-@media (min-width: 768px) {
-    .menu-icon {
+    @media (min-width: 768px) {
         margin: 19px 16px 0px;
     }
 }
@@ -181,10 +165,8 @@ body {
     height: 10px;
     width: 19px;
     margin: 12px 0px 0px;
-}
 
-@media (min-width: 1024px) {
-    .tws-bow {
+    @media (min-width: 1024px) {
         height: 19px;
         width: 37px;
         margin: 16px 0px 0px;
@@ -195,10 +177,8 @@ body {
     width: 117px;
     height: 6px;
     margin: 7px 0px 0px;
-}
 
-@media (min-width: 1024px) {
-    .tws-name {
+    @media (min-width: 1024px) {
         width: 220px;
         height: 12px;
         margin: 13px 0px 0px;
@@ -213,20 +193,16 @@ body {
 
 .menu-item {
     margin: 32px 4px 0px;
-    color: #191919;
-    border-bottom: 1px solid white;
+    color: $tws_black;
+    border-bottom: 1px solid $tws_white;
     white-space: nowrap;
     list-style: none;
     line-height: 20px;
     cursor: pointer;
-}
 
-.menu-item:hover {
-    border-bottom: 1px solid #FF6B64;
-}
+    &:hover { border-bottom: 1px solid $tws_coral; }
 
-@media (min-width:1264px) {
-    .menu-item {
+    @media (min-width:1264px) {
         margin: 32px 32px 0px;
     }
 }
@@ -239,10 +215,8 @@ body {
 
 .xl {
     display: none;
-}
 
-@media (min-width:1264px) {
-    .xl {
+    @media (min-width:1264px) {
         display: block;
     }
 }

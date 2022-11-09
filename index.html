@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootcamp: Ticket 1</title>
-    <link rel="stylesheet" href="main.css"/>
+    <!-- <link rel="stylesheet" href="css/main.css"/> -->
+    <link rel="stylesheet" href="css/style.css"/>
 
     <style>
         @font-face{
@@ -42,15 +43,17 @@
 
 <body>
 
-    <header>
-        <div class="heading">
+    <header class="header">
+        <nav class="heading">
             <div class="nav-column search" id="search">
-                <!-- Sorry not sure this is what you wanted! -->
                 <a href="search.html"> 
                     <img class="search-icon" src="img/search.svg"/>
                 </a>
             </div>
-            <img class="nav-column tws-logo" src="img/tws-logo.png"/>
+            <a href="index.html"class="nav-column logo">
+                <img class="tws-bow" src="img/Bow.png"/>
+                <img class="tws-name" src="img/TWS.png"/>
+            </a>                  
             <div class="nav-column nav-controls">
                 <div class="nav-option link login">Login</div>
                 <div class="nav-option link find-couple">Find a Couple</div>
@@ -59,33 +62,26 @@
                 </div>
                 <div class="menu"><img class="menu-icon" src="img/menu.svg"/></div>
             </div>
-        </div>
+        </nav>
         
         <div class="menu-bar">
-            <ul class="menu-bar-l">
-                <li class="menu-item-l link">New Arrivals</li>
-                <li class="menu-item-l link">Brands</li>
-                <li class="menu-item-l link">Tableware</li>
-                <li class="menu-item-l link">Kitchen</li>
-                <li class="menu-item-l link">Home & Furniture</li>
-                <li class="menu-item-l link">Bed & Bath</li>
-                <li class="menu-item-l link">Garden & DIY</li>
-                <li class="menu-item-l link">Lifestyle</li>
-                <li class="menu-item-l link">Experiences</li>
-                <li class="menu-item-l link">Funds</li>
-                <li class="menu-item-l link">Inspiration</li>
-                <li class="menu-item-l link">Collections</li>
-            </ul>
-
-            <ul class="menu-bar-xl">
-                <li class="menu-item-xl link">Brands</li>
-                <li class="menu-item-xl link">Products</li>
-                <li class="menu-item-xl link">Funds</li>
-                <li class="menu-item-xl link">Travel & Experiences</li>
-                <li class="menu-item-xl link">Showrooms</li>
-                <li class="menu-item-xl link">Inspiration</li>
-                <li class="menu-item-xl link">Collections</li>
-                <li class="menu-item-xl link">About</li>
+            <ul class="menu-list">
+                <li class="menu-item large">New Arrivals</li>
+                <li class="menu-item">Brands</li>
+                <li class="menu-item xl">Products</li>
+                <li class="menu-item large">Tableware</li>
+                <li class="menu-item large">Kitchen</li>
+                <li class="menu-item large">Home & Furniture</li>
+                <li class="menu-item large">Bed & Bath</li>
+                <li class="menu-item large">Garden & DIY</li>
+                <li class="menu-item large">Lifestyle</li>
+                <li class="menu-item large">Experiences</li>
+                <li class="menu-item">Funds</li>
+                <li class="menu-item xl">Travel & Experiences</li>
+                <li class="menu-item xl">Showrooms</li>
+                <li class="menu-item">Inspiration</li>
+                <li class="menu-item">Collections</li>
+                <li class="menu-item xl">About</li>               
             </ul>
         </div>
         
