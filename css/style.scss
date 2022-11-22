@@ -10,6 +10,10 @@ $nav-font-size: 14px;
 
 $breakpoints: (sm: 375px, md: 768px, lg: 1024px, xl: 1264px);
 
+body {
+    margin: 0;
+}
+
 .container {
     max-width: 1264px;
     margin: 0 auto;
@@ -124,6 +128,8 @@ $breakpoints: (sm: 375px, md: 768px, lg: 1024px, xl: 1264px);
 
 .create-list-text {
     text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.4px;
 }
 
 .menu-bar {
@@ -204,32 +210,20 @@ $breakpoints: (sm: 375px, md: 768px, lg: 1024px, xl: 1264px);
 }
 
 .menu-item {
-    margin: 32px 4px 0px;
+    margin: 32px 18px 0px;
     padding: 0px 0px 8px;
     color: $tws_black;
     border-bottom: 2px solid $tws_white;
+    letter-spacing: 0.8px;
     white-space: nowrap;
     list-style: none;
     line-height: 20px;
     cursor: pointer;
+    
 
     &:hover { border-bottom: 2px solid $tws_coral; }
 
     @include media ( ">=xl" ) {
         margin: 32px 32px 0px;
-    }
-}
-
-.large {
-    @include media ( ">=xl" ) {
-        display: none;
-    }
-}
-
-.xl {
-    display: none;
-
-    @include media ( ">=xl" ) {
-        display: block;
     }
 }
