@@ -1,3 +1,5 @@
+@import "../node_modules/include-media/dist/_include-media.scss" ; 
+
 $tws_black: #191919;
 $tws_white: #FFFFFF;
 $tws_blue: #142D3B;
@@ -6,16 +8,24 @@ $tws_coral: #FF6B64;
 $font-regular: 'Karla Regular';
 $nav-font-size: 14px;
 
+$breakpoints: (sm: 375px, md: 768px, lg: 1024px, xl: 1264px) !default;
+
+.container {
+    max-width: 1264px;
+    margin: 0 auto;
+}
+
 .header {
     height: 48px;
     font-weight: 400;
     font-size: $nav-font-size;
 
-    @media (min-width: 768px) {
+    // tried adding in the width in case that worked but doesn't appear to change anything, width remains at 48px
+    @include media ( ">=md" ) {
         height: 56px;
     }
 
-    @media (min-width: 1024px) {
+    @include media ( ">=lg" ) {
         height: 125px;
     }
 }
@@ -26,7 +36,7 @@ $nav-font-size: 14px;
     right: 0;
     margin: 0;
 
-    @media (min-width: 1024px) {
+    @include media ( ">=lg" ) {
         display: none;
     }
 }
@@ -43,11 +53,11 @@ $nav-font-size: 14px;
     height: 48px;
     font-family: $font-regular;
 
-    @media (min-width: 768px) {
+    @include media ( ">=md" ) {
         height: 56px;
     }
 
-    @media (min-width: 1024px) {
+    @include media ( ">=lg" ) {
         line-height: 24px;
         height: 61px;
     }
@@ -77,11 +87,11 @@ $nav-font-size: 14px;
     text-align: center;
     margin: 14px 56px 0px 0px;
 
-    @media (min-width:768px) {
+    @include media ( ">=md" ) {
         margin: 16px 56px 0px 0px;
     }
 
-    @media (min-width: 1024px) {
+    @include media ( ">=lg" ) {
         margin: 24px 16px 0px 0px;
         height: 24px;
     }
@@ -90,7 +100,7 @@ $nav-font-size: 14px;
 .link {
     cursor: pointer;
 
-    &:hover { border-bottom: 1px solid $tws_coral; }
+    &:hover { text-decoration: underline; }
 }
 
 .create-list {
@@ -100,12 +110,14 @@ $nav-font-size: 14px;
     width: 94px;
     padding: 4px 16px;
     margin-right: 32px;
+
+    &:hover { background: $tws_coral; }
 }
 
 .create-list, .find-couple {
     display: none;
 
-    @media (min-width: 1024px) {
+    @include media ( ">=lg" ) {
         display: inline-block;
     }
 }
@@ -115,25 +127,25 @@ $nav-font-size: 14px;
 }
 
 .menu-bar {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: $font-regular;
 
-    @media (min-width: 1024px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        font-family: $font-regular;
+    @include media ( "<lg" ) {
+        display: none;
     }
 }
 
-@media (min-width: 1024px) {
-    .create-list-btn {
+.create-list-btn {
+    @include media ( ">=lg" ) {
         left: 866px;
     }      
 }
 
-@media (min-width: 1264px) {
-    .create-list-btn {
+.create-list-btn {
+    @include media ( ">=xl" ) {
         left: 1106px;
     }
 }
@@ -144,11 +156,11 @@ $nav-font-size: 14px;
     width: 15px;
     margin: 17px 0px 7px 17px;
 
-    @media (min-width: 768px) {
+    @include media ( ">=md" ) {
         margin: 21px 0px 7px 17px;
     }
     
-    @media (min-width: 1024px) {
+    @include media ( ">=lg" ) {
         margin: 33px 0px 16px 33px;       
     }
 }
@@ -156,7 +168,7 @@ $nav-font-size: 14px;
 .menu-icon {
     margin: 16px 16px 0px;
 
-    @media (min-width: 768px) {
+    @include media ( ">=md" ) {
         margin: 19px 16px 0px;
     }
 }
@@ -166,7 +178,7 @@ $nav-font-size: 14px;
     width: 19px;
     margin: 12px 0px 0px;
 
-    @media (min-width: 1024px) {
+    @include media ( ">=lg" ) {
         height: 19px;
         width: 37px;
         margin: 16px 0px 0px;
@@ -178,7 +190,7 @@ $nav-font-size: 14px;
     height: 6.5px;
     margin: 7px 0px 0px;
 
-    @media (min-width: 1024px) {
+    @include media ( ">=lg" ) {
         width: 220px;
         height: 12px;
         margin: 13px 0px 0px;
@@ -193,22 +205,23 @@ $nav-font-size: 14px;
 
 .menu-item {
     margin: 32px 4px 0px;
+    padding: 0px 0px 8px;
     color: $tws_black;
-    border-bottom: 1px solid $tws_white;
+    border-bottom: 2px solid $tws_white;
     white-space: nowrap;
     list-style: none;
     line-height: 20px;
     cursor: pointer;
 
-    &:hover { border-bottom: 1px solid $tws_coral; }
+    &:hover { border-bottom: 2px solid $tws_coral; }
 
-    @media (min-width:1264px) {
+    @include media ( ">=xl" ) {
         margin: 32px 32px 0px;
     }
 }
 
-@media (min-width:1264px) {
-    .large {
+.large {
+    @include media ( ">=xl" ) {
         display: none;
     }
 }
@@ -216,7 +229,7 @@ $nav-font-size: 14px;
 .xl {
     display: none;
 
-    @media (min-width:1264px) {
+    @include media ( ">=xl" ) {
         display: block;
     }
 }

@@ -1,14 +1,19 @@
+.container {
+  max-width: 1264px;
+  margin: 0 auto;
+}
+
 .header {
   height: 48px;
   font-weight: 400;
   font-size: 14px;
 }
-@media (min-width: 768px) {
+@media (>=medium) {
   .header {
     height: 56px;
   }
 }
-@media (min-width: 1024px) {
+@media (>=large) {
   .header {
     height: 125px;
   }
@@ -20,7 +25,7 @@
   right: 0;
   margin: 0;
 }
-@media (min-width: 1024px) {
+@media (>=large) {
   .menu {
     display: none;
   }
@@ -38,12 +43,12 @@
   height: 48px;
   font-family: "Karla Regular";
 }
-@media (min-width: 768px) {
+@media (>=medium) {
   .heading {
     height: 56px;
   }
 }
-@media (min-width: 1024px) {
+@media (>=large) {
   .heading {
     line-height: 24px;
     height: 61px;
@@ -75,12 +80,12 @@
   text-align: center;
   margin: 14px 56px 0px 0px;
 }
-@media (min-width: 768px) {
+@media (>=medium) {
   .nav-option {
     margin: 16px 56px 0px 0px;
   }
 }
-@media (min-width: 1024px) {
+@media (>=large) {
   .nav-option {
     margin: 24px 16px 0px 0px;
     height: 24px;
@@ -91,7 +96,7 @@
   cursor: pointer;
 }
 .link:hover {
-  border-bottom: 1px solid #FF6B64;
+  text-decoration: underline;
 }
 
 .create-list {
@@ -102,11 +107,14 @@
   padding: 4px 16px;
   margin-right: 32px;
 }
+.create-list:hover {
+  background: #FF6B64;
+}
 
 .create-list, .find-couple {
   display: none;
 }
-@media (min-width: 1024px) {
+@media (>=large) {
   .create-list, .find-couple {
     display: inline-block;
   }
@@ -119,7 +127,7 @@
 .menu-bar {
   display: none;
 }
-@media (min-width: 1024px) {
+@media (>=large) {
   .menu-bar {
     display: flex;
     flex-direction: column;
@@ -129,12 +137,12 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (>=large) {
   .create-list-btn {
     left: 866px;
   }
 }
-@media (min-width: 1264px) {
+@media (>=x-large) {
   .create-list-btn {
     left: 1106px;
   }
@@ -145,12 +153,12 @@
   width: 15px;
   margin: 17px 0px 7px 17px;
 }
-@media (min-width: 768px) {
+@media (>=medium) {
   .search-icon {
     margin: 21px 0px 7px 17px;
   }
 }
-@media (min-width: 1024px) {
+@media (>= large ) {
   .search-icon {
     margin: 33px 0px 16px 33px;
   }
@@ -159,7 +167,7 @@
 .menu-icon {
   margin: 16px 16px 0px;
 }
-@media (min-width: 768px) {
+@media (>=medium) {
   .menu-icon {
     margin: 19px 16px 0px;
   }
@@ -170,7 +178,7 @@
   width: 19px;
   margin: 12px 0px 0px;
 }
-@media (min-width: 1024px) {
+@media (>=large) {
   .tws-bow {
     height: 19px;
     width: 37px;
@@ -183,7 +191,7 @@
   height: 6.5px;
   margin: 7px 0px 0px;
 }
-@media (min-width: 1024px) {
+@media (>=large) {
   .tws-name {
     width: 220px;
     height: 12px;
@@ -199,23 +207,24 @@
 
 .menu-item {
   margin: 32px 4px 0px;
+  padding: 0px 0px 8px;
   color: #191919;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
   white-space: nowrap;
   list-style: none;
   line-height: 20px;
   cursor: pointer;
 }
 .menu-item:hover {
-  border-bottom: 1px solid #FF6B64;
+  border-bottom: 2px solid #FF6B64;
 }
-@media (min-width: 1264px) {
+@media (>=x-large) {
   .menu-item {
     margin: 32px 32px 0px;
   }
 }
 
-@media (min-width: 1264px) {
+@media (>=x-large) {
   .large {
     display: none;
   }
@@ -223,7 +232,7 @@
 .xl {
   display: none;
 }
-@media (min-width: 1264px) {
+@media (>=x-large) {
   .xl {
     display: block;
   }
