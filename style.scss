@@ -1,0 +1,235 @@
+@import "../node_modules/include-media/dist/include-media" ; 
+
+$tws_black: #191919;
+$tws_white: #FFFFFF;
+$tws_blue: #142D3B;
+$tws_coral: #FF6B64;
+
+$font-regular: 'Karla Regular';
+$nav-font-size: 14px;
+
+$breakpoints: (sm: 375px, md: 768px, lg: 1024px, xl: 1264px) !default;
+
+.container {
+    max-width: 1264px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 48px;
+    font-weight: 400;
+    font-size: $nav-font-size;
+
+    // tried adding in the width in case that worked but doesn't appear to change anything, width remains at 48px
+    @include media ( ">=md" ) {
+        height: 56px;
+    }
+
+    @include media ( ">=lg" ) {
+        height: 125px;
+    }
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+
+    @include media ( ">=lg" ) {
+        display: none;
+    }
+}
+
+.heading {
+    line-height: 20px;
+    color: $tws_black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    position: relative;
+    height: 48px;
+    font-family: $font-regular;
+
+    @include media ( ">=md" ) {
+        height: 56px;
+    }
+
+    @include media ( ">=lg" ) {
+        line-height: 24px;
+        height: 61px;
+    }
+}
+
+.nav-column {
+    width: 33.33%;
+}
+
+.logo {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-controls {
+    text-align-last: right;
+}
+
+.nav-option {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    height: 20px;
+    text-align: center;
+    margin: 14px 56px 0px 0px;
+
+    @include media ( ">=md" ) {
+        margin: 16px 56px 0px 0px;
+    }
+
+    @include media ( ">=lg" ) {
+        margin: 24px 16px 0px 0px;
+        height: 24px;
+    }
+}
+
+.link {
+    cursor: pointer;
+
+    &:hover { text-decoration: underline; }
+}
+
+.create-list {
+    background: $tws_blue;
+    color: $tws_white;
+    text-transform: uppercase;
+    width: 94px;
+    padding: 4px 16px;
+    margin-right: 32px;
+
+    &:hover { background: $tws_coral; }
+}
+
+.create-list, .find-couple {
+    display: none;
+
+    @include media ( ">=lg" ) {
+        display: inline-block;
+    }
+}
+
+.create-list-text {
+    text-align: center;
+}
+
+.menu-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: $font-regular;
+
+    @include media ( "<lg" ) {
+        display: none;
+    }
+}
+
+@include media ( ">=lg" ) {
+    .create-list-btn {
+        left: 866px;
+    }      
+}
+
+@include media ( ">=xl" ) {
+    .create-list-btn {
+        left: 1106px;
+    }
+}
+
+.search-icon {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 17px 0px 7px 17px;
+
+    @include media ( ">=md" ) {
+        margin: 21px 0px 7px 17px;
+    }
+    
+    @include media ( ">=lg" ) {
+        margin: 33px 0px 16px 33px;       
+    }
+}
+
+.menu-icon {
+    margin: 16px 16px 0px;
+
+    @include media ( ">=md" ) {
+        margin: 19px 16px 0px;
+    }
+}
+
+.tws-bow {
+    height: 10px;
+    width: 19px;
+    margin: 12px 0px 0px;
+
+    @include media ( ">=lg" ) {
+        height: 19px;
+        width: 37px;
+        margin: 16px 0px 0px;
+    }
+}
+
+.tws-name {
+    width: 117px;
+    height: 6.5px;
+    margin: 7px 0px 0px;
+
+    @include media ( ">=lg" ) {
+        width: 220px;
+        height: 12px;
+        margin: 13px 0px 0px;
+    }
+}
+
+.menu-list {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu-item {
+    margin: 32px 4px 0px;
+    padding: 0px 0px 8px;
+    color: $tws_black;
+    border-bottom: 2px solid $tws_white;
+    white-space: nowrap;
+    list-style: none;
+    line-height: 20px;
+    cursor: pointer;
+
+    &:hover { border-bottom: 2px solid $tws_coral; }
+
+    @include media ( ">=xl" ) {
+        margin: 32px 32px 0px;
+    }
+}
+
+.large {
+    @include media ( ">=xl" ) {
+        display: none;
+    }
+}
+
+.xl {
+    display: none;
+
+    @include media ( ">=xl" ) {
+        display: block;
+    }
+}
