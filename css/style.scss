@@ -8,7 +8,7 @@ $tws_coral: #FF6B64;
 $font-regular: 'Karla Regular';
 $nav-font-size: 14px;
 
-$breakpoints: (sm: 375px, md: 768px, lg: 1024px, xl: 1264px) !default;
+$breakpoints: (sm: 375px, md: 768px, lg: 1024px, xl: 1264px);
 
 .container {
     max-width: 1264px;
@@ -20,7 +20,6 @@ $breakpoints: (sm: 375px, md: 768px, lg: 1024px, xl: 1264px) !default;
     font-weight: 400;
     font-size: $nav-font-size;
 
-    // tried adding in the width in case that worked but doesn't appear to change anything, width remains at 48px
     @include media ( ">=md" ) {
         height: 56px;
     }
