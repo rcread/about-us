@@ -205,12 +205,14 @@ body {
 
 .menu-list {
     display: flex;
+    justify-content: space-evenly;
+    width: 100%;
     padding: 0px;
     margin: 0px;
 }
 
 .menu-item {
-    margin: 32px 18px 0px;
+    margin: 32px 8px 0px;
     padding: 0px 0px 8px;
     color: $tws_black;
     border-bottom: 2px solid $tws_white;
@@ -219,11 +221,6 @@ body {
     list-style: none;
     line-height: 20px;
     cursor: pointer;
-    
 
     &:hover { border-bottom: 2px solid $tws_coral; }
-
-    @include media ( ">=xl" ) {
-        margin: 32px 32px 0px;
-    }
 }
