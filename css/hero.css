@@ -1,0 +1,12 @@
+body {
+    font-family: Juana;
+}
+
+.hero {
+    background-image: url("img/hero.png");
+    width: 100%;
+}
+
+h1 {
+    color: white;
+}
