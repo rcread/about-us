@@ -1,12 +1,47 @@
 body {
-    font-family: Juana;
+  margin: 0;
 }
 
 .hero {
-    background-image: url("img/hero.png");
-    width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+  height: 432px;
+  position: relative;
+  line-height: 40px;
+}
+@media (min-width: 768px) {
+  .hero {
+    height: 277px;
+    line-height: 56px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero {
+    height: 369px;
+  }
+}
+@media (min-width: 1264px) {
+  .hero {
+    height: 420px;
+  }
+}
+@media (min-width: 1450px) {
+  .hero {
+    height: 500px;
+  }
 }
 
 h1 {
-    color: white;
-}
+  color: white;
+  font-family: "Juana";
+  font-size: 48px;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  font-weight: 300;
+  width: 100%;
+}/*# sourceMappingURL=hero.css.map */
