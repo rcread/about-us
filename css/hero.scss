@@ -1,52 +1,58 @@
 @import "../node_modules/include-media/dist/_include-media.scss"; 
 
-// have added in xxl breakpoint as hero section image gets larger with screen size however the height: auto option is not working for me so have had to increase height instead
-$breakpoints: (sm: 375px, md: 768px, lg: 1024px, xl: 1264px, xxl: 1450px);
+$breakpoints: (sm: 375px, md: 768px, lg: 1024px, xl: 1264px);
 $font-heading: 'Juana';
+$shadow: #191919;
 
 body {
     margin: 0;
 }
 
-.hero {
-    // this isn't working - why? added style to div instead. Image tag from this page doesn't work but it does from my explorer panel
-    // background-image: url("img/hero2.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.hero-container {
+    display: flex;
+    align-items: center;
     width: 100%;
-    text-align: center;
-    height: 432px;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
     position: relative;
-    line-height: 40px;
-
-    @include media ( ">=md" ) {
-        height: 277px;
-        line-height: 56px;
-    }
-
-    @include media ( ">=lg" ) {
-        height: 369px;
-    }
-
-    @include media ( ">=xl" ) {
-        height: 420px;
-    }
-
-    @include media ( ">=xxl" ) {
-        height: 500px;
-        //made up 500px height based on tws website not figma
-    }
+    z-index: 8;
 }
 
 h1 {
+    text-align: center;
     color: white;
     font-family: $font-heading;
-    font-size: 48px;
+    font-size: 32px;
     margin: 0 auto;
-    top: 50%;
-    transform: translateY(-50%);
     position: absolute;
     font-weight: 300;
     width: 100%;
+    z-index: 10;
+
+    @include media ( ">=md" ) {
+        font-size: 48px;
+    }
+}
+
+.heading-shadow {
+    display: flex;
+    background-color: $shadow;
+    width: 130px;
+    height: 40px;
+    opacity: 0.43;
+    mix-blend-mode: normal;
+    filter: blur(43.4925px);
+    margin: 0 auto;
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    transform: translate(-50%);
+
+    @include media ( ">=md" ) {
+        height: 87px;
+        width: 338px;
+    }
 }

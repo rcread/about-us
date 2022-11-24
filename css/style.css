@@ -210,12 +210,14 @@ body {
 
 .menu-list {
   display: flex;
+  justify-content: space-evenly;
+  width: 100%;
   padding: 0px;
   margin: 0px;
 }
 
 .menu-item {
-  margin: 32px 18px 0px;
+  margin: 32px 8px 0px;
   padding: 0px 0px 8px;
   color: #191919;
   border-bottom: 2px solid #FFFFFF;
@@ -227,9 +229,4 @@ body {
 }
 .menu-item:hover {
   border-bottom: 2px solid #FF6B64;
-}
-@media (min-width: 1264px) {
-  .menu-item {
-    margin: 32px 32px 0px;
-  }
 }/*# sourceMappingURL=style.css.map */
