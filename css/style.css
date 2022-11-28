@@ -229,4 +229,55 @@ body {
 }
 .menu-item:hover {
   border-bottom: 2px solid #FF6B64;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 8;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: "Juana";
+  font-size: 32px;
+  margin: 0 auto;
+  position: absolute;
+  font-weight: 300;
+  width: 100%;
+  z-index: 10;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+
+.heading-shadow {
+  display: flex;
+  background-color: #191919;
+  width: 130px;
+  height: 40px;
+  opacity: 0.43;
+  mix-blend-mode: normal;
+  filter: blur(43.4925px);
+  margin: 0 auto;
+  position: absolute;
+  z-index: 9;
+  left: 50%;
+  transform: translate(-50%);
+}
+@media (min-width: 768px) {
+  .heading-shadow {
+    height: 87px;
+    width: 338px;
+  }
 }/*# sourceMappingURL=style.css.map */
