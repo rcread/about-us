@@ -115,6 +115,11 @@ body {
 .create-list:hover {
   background: #FF6B64;
 }
+.create-list-text {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+}
 
 .create-list, .find-couple {
   display: none;
@@ -123,12 +128,6 @@ body {
   .create-list, .find-couple {
     display: inline-block;
   }
-}
-
-.create-list-text {
-  text-align: center;
-  font-weight: bold;
-  letter-spacing: 0.4px;
 }
 
 .menu-bar {
@@ -149,7 +148,6 @@ body {
     left: 866px;
   }
 }
-
 @media (min-width: 1264px) {
   .create-list-btn {
     left: 1106px;
@@ -231,20 +229,18 @@ body {
   border-bottom: 2px solid #FF6B64;
 }
 
-.hero-container {
+.hero {
   display: flex;
   align-items: center;
   width: 100%;
+  position: relative;
 }
-
-.hero {
+.hero-img {
   width: 100%;
   height: auto;
-  position: relative;
   z-index: 8;
 }
-
-h1 {
+.hero-title {
   text-align: center;
   color: white;
   font-family: "Juana";
@@ -256,13 +252,12 @@ h1 {
   z-index: 10;
 }
 @media (min-width: 768px) {
-  h1 {
+  .hero-title {
     font-size: 48px;
   }
 }
-
-.heading-shadow {
-  display: flex;
+.hero-title::before {
+  content: "";
   background-color: #191919;
   width: 130px;
   height: 40px;
@@ -276,7 +271,7 @@ h1 {
   transform: translate(-50%);
 }
 @media (min-width: 768px) {
-  .heading-shadow {
+  .hero-title::before {
     height: 87px;
     width: 338px;
   }

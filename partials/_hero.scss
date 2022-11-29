@@ -1,68 +1,48 @@
 .hero {
+    display: flex;
+    align-items: center;
     width: 100%;
-    height: auto;
     position: relative;
-    z-index: 8;
 
-    &_container {
-        display: flex;
-        align-items: center;
+    &-img {
         width: 100%;
-    }
-}
-
-.section-heading {
-    text-align: center;
-    color: white;
-    font-family: $font-heading;
-    font-size: 32px;
-    margin: 0 auto;
-    position: absolute;
-    font-weight: 300;
-    width: 100%;
-    z-index: 10;
-
-    @include media ( ">=md" ) {
-        font-size: 48px;
+        height: auto;
+        z-index: 8;
     }
 
-    &::after {
-        content: "";
-        background-color: $tws_black;
-        width: 130px;
-        height: 40px;
-        opacity: 0.43;
-        mix-blend-mode: normal;
-        filter: blur(43.4925px);
+    &-title {
+        text-align: center;
+        color: white;
+        font-family: $font-heading;
+        font-size: 32px;
         margin: 0 auto;
         position: absolute;
-        z-index: 9;
-        left: 50%;
-        transform: translate(-50%);
-
+        font-weight: 300;
+        width: 100%;
+        z-index: 10;
+        
         @include media ( ">=md" ) {
-            height: 87px;
-            width: 338px;
+            font-size: 48px;
+        }
+
+        &::before {
+            content: "";
+            background-color: $tws_black;
+            width: 130px;
+            height: 40px;
+            opacity: 0.43;
+            mix-blend-mode: normal;
+            filter: blur(43.4925px);
+            margin: 0 auto;
+            position: absolute;
+            z-index: 9;
+            left: 50%;
+            transform: translate(-50%);
+
+            @include media ( ">=md" ) {
+                height: 87px;
+                width: 338px;
+            }
         }
     }
 }
-
-// .heading-shadow {
-//     display: flex;
-//     background-color: $tws_black;
-//     width: 130px;
-//     height: 40px;
-//     opacity: 0.43;
-//     mix-blend-mode: normal;
-//     filter: blur(43.4925px);
-//     margin: 0 auto;
-//     position: absolute;
-//     z-index: 9;
-//     left: 50%;
-//     transform: translate(-50%);
-
-//     @include media ( ">=md" ) {
-//         height: 87px;
-//         width: 338px;
-//     }
-// }
