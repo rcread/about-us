@@ -4,13 +4,12 @@
     width: 100%;
     position: relative;
 
-    &-img {
+    &__img {
         width: 100%;
         height: auto;
-        
     }
 
-    &-title {
+    &__title {
         text-align: center;
         color: white;
         font-family: $font-heading;
@@ -19,7 +18,7 @@
         position: absolute;
         font-weight: 300;
         width: 100%;
-        z-index: 10;
+        z-index: 1;
         
         @include media ( ">=md" ) {
             font-size: 48px;
