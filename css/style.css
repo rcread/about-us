@@ -151,11 +151,11 @@ body {
   letter-spacing: 0.4px;
 }
 
-.create, .find {
+.create, .findCouple {
   display: none;
 }
 @media (min-width: 1024px) {
-  .create, .find {
+  .create, .findCouple {
     display: inline-block;
   }
 }
@@ -223,21 +223,23 @@ body {
 }
 .hero__title {
   text-align: center;
-  color: white;
   font-family: "Juana";
   font-size: 32px;
   margin: 0 auto;
   position: absolute;
   font-weight: 300;
   width: 100%;
-  z-index: 1;
 }
 @media (min-width: 768px) {
   .hero__title {
     font-size: 48px;
   }
 }
-.hero__title::before {
+.hero__title--withShadow {
+  color: white;
+  z-index: 1;
+}
+.hero__title--withShadow::before {
   content: "";
   background-color: #191919;
   width: 130px;
@@ -252,7 +254,7 @@ body {
   transform: translate(-50%);
 }
 @media (min-width: 768px) {
-  .hero__title::before {
+  .hero__title--withShadow::before {
     height: 87px;
     width: 338px;
   }

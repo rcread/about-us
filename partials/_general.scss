@@ -145,7 +145,7 @@ body {
     }
 }
 
-.create, .find {
+.create, .findCouple {
     display: none;
 
     @include media ( ">=lg" ) {
