@@ -1,0 +1,17 @@
+@import "../../node_modules/include-media/dist/_include-media.scss";
+
+$breakpoints: (
+  sm: 375px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1264px,
+);
+
+$tws_black: #191919;
+$tws_white: #ffffff;
+$tws_blue: #142d3b;
+$tws_coral: #ff6b64;
+
+$font-regular: "Karla Regular";
+$font-heading: "Juana";
+$nav-font-size: 14px;
