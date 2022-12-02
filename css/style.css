@@ -221,6 +221,15 @@ body {
   width: 100%;
   height: auto;
 }
+@media (max-width: 767px) {
+  .hero__img {
+    height: 432px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 45%;
+       object-position: 45%;
+  }
+}
 .hero__title {
   text-align: center;
   font-family: "Juana";

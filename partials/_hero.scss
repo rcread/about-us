@@ -7,6 +7,12 @@
     &__img {
         width: 100%;
         height: auto;
+
+        @include media ( "<md" ) {
+            height: 432px;
+            object-fit: cover;
+            object-position: 45%;
+        }
     }
 
     &__title {
