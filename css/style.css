@@ -211,6 +211,65 @@ body {
   }
 }
 
+.cta {
+  align-items: center;
+  text-align: center;
+  margin: 100px 0px 0px;
+}
+@media (max-width: 375px) {
+  .cta {
+    margin: 64px 0px 0px;
+  }
+}
+.cta__header {
+  color: #191919;
+  font-family: "Juana";
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  margin: 0px 16px;
+}
+@media (min-width: 768px) {
+  .cta__header {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+.cta__info-text {
+  color: #191919;
+  font-family: "Karla Regular";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  max-width: 343px;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  .cta__info-text {
+    max-width: 600px;
+  }
+}
+.cta__info-btn {
+  font-family: "Karla Regular";
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #142D3B;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 32px 0px 0px;
+  padding: 16px 40px;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  border: 0;
+  gap: 10px;
+}
+.cta__info-btn:hover {
+  background: #FF6B64;
+}
+
 .hero {
   display: flex;
   align-items: center;
