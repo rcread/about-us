@@ -35,53 +35,55 @@
         font-weight: normal;
         src: local('Tropical Summer'), url('fonts/tropical-summer.otf') format('opentype');
         }
-        
     </style>
     
 </head>
 
 <body>
-
     <header class="header">
-        <section class="container">
-            <nav class="heading">
-                <div class="nav-column search" id="search">
+        <section class="header__container">
+
+            <nav class="nav">
+                <div class="nav__column search" id="search">
                     <a href="search.html"> 
-                        <img class="search-icon" src="img/search.svg"/>
+                        <img class="search__img" src="img/search.svg"/>
                     </a>
                 </div>
-                <a href="index.html"class="nav-column logo">
-                    <img class="tws-bow" src="img/Bow.png"/>
-                    <img class="tws-name" src="img/TWS.png"/>
+                <a href="index.html"class="nav__column logo">
+                    <img class="logo__bow" src="img/Bow.png"/>
+                    <img class="logo__name" src="img/TWS.png"/>
                 </a>                  
-                <div class="nav-column nav-controls">
-                    <div class="nav-option link login">Login</div>
-                    <div class="nav-option link find-couple">Find a Couple</div>
-                    <div class="nav-option create-list">
-                        <div class="create-list-text">Create a List</div>
+                <div class="nav__column control">
+                    <div class="control__option link">Login</div>
+                    <div class="control__option link findCouple">Find a Couple</div>
+                    <div class="control__option create">
+                        <div class="create__list">Create a List</div>
                     </div>
-                    <div class="menu"><img class="menu-icon" src="img/menu.svg"/></div>
+                    <div class="hamburger"><img class="hamburger__img" src="img/menu.svg"/></div>
                 </div>
             </nav>
             
-            <div class="menu-bar">
-                <ul class="menu-list">
-                    <li class="menu-item">Brands</li>
-                    <li class="menu-item xl">Products</li>
-                    <li class="menu-item">Funds</li>
-                    <li class="menu-item xl">Travel & Experiences</li>
-                    <li class="menu-item xl">Showrooms</li>
-                    <li class="menu-item">Inspiration</li>
-                    <li class="menu-item">Collections</li>
-                    <li class="menu-item xl">About</li>               
+            <div class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list--item">Brands</li>
+                    <li class="menu__list--item">Products</li>
+                    <li class="menu__list--item">Funds</li>
+                    <li class="menu__list--item">Travel & Experiences</li>
+                    <li class="menu__list--item">Showrooms</li>
+                    <li class="menu__list--item">Inspiration</li>
+                    <li class="menu__list--item">Collections</li>
+                    <li class="menu__list--item">About</li>               
                 </ul>
             </div>
+
         </section>
-        
     </header>
     
     <main>
-
+        <section class="hero">
+            <img class="hero__img" src="img/hero2.jpg"/>
+            <h1 class="hero__title hero__title--withShadow">About Us</h1>
+        </section>
     </main>
 
     <footer>
