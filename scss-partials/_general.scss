@@ -210,6 +210,12 @@ body {
     color: $tws_white;
     background-color: $tws_blue;
     cursor: pointer;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 12px 24px;
+    letter-spacing: 0.8px;
+    border: 0;
 
     &:hover { background: $tws_coral; }
 }
