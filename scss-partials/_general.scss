@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .header {
@@ -202,64 +204,12 @@ body {
     }
 }
 
-.cta {
-    align-items: center;
-    text-align: center;
-    margin: 100px 0px 48px;
+.button {
+    font-family: $font-regular;
+    text-transform: uppercase;
+    color: $tws_white;
+    background-color: $tws_blue;
+    cursor: pointer;
 
-    @include media ( "<=sm" ) {
-        margin: 64px 0px 0px;
-    }
-    
-    &__header {
-        color: $tws_black;
-        font-family: $font-heading;
-        font-style: normal;
-        font-size: 24px;
-        font-weight: 300;
-        line-height: 32px;
-        margin: 0px 16px;
-
-        @include media ( ">=md" ) {
-            font-size: 32px;
-            line-height: 40px;
-        }
-    }
-
-    &__info {
-        
-        &-text {
-            color: $tws_black;
-            font-family: $font-regular;
-            font-size: 16px;
-            line-height: 24px;
-            font-weight: 400;
-            max-width: 343px;
-            margin: 0 auto;
-            margin-top: 16px;
-            
-            @include media ( ">=md" ) {
-                max-width: 600px;
-                // previously had this as 588px as per the figma design but on live the 'journey' in the final sentence is on the third line not under it - where should this be?
-            }
-        }
-
-        &-btn {
-            font-family: $font-regular;
-            text-transform: uppercase;
-            color: $tws_white;
-            background-color: $tws_blue;
-            font-size: 14px;
-            line-height: 24px;
-            font-weight: 700;
-            margin: 32px 0px 0px;
-            padding: 16px 40px;
-            letter-spacing: 0.8px;
-            cursor: pointer;
-            border: 0;
-            gap: 10px;
-
-            &:hover { background: $tws_coral; }
-        }
-    }
+    &:hover { background: $tws_coral; }
 }
