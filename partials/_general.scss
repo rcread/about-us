@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .header {
@@ -171,7 +173,7 @@ body {
         padding: 0px;
         margin: 0px;
     
-        &--item {
+        &-item {
             margin: 32px 8px 0px;
             padding: 0px 0px 8px;
             color: $tws_black;
@@ -200,4 +202,20 @@ body {
     @include media ( ">=lg" ) {
         margin: 33px 0px 16px 33px;       
     }
+}
+
+.button {
+    font-family: $font-regular;
+    text-transform: uppercase;
+    color: $tws_white;
+    background-color: $tws_blue;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 12px 24px;
+    letter-spacing: 0.8px;
+    border: 0;
+
+    &:hover { background: $tws_coral; }
 }
