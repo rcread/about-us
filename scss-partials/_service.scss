@@ -34,11 +34,6 @@
             max-width: 600px;
             margin: 0 auto;
             margin-top: 16px;
-            
-            // @include media ( ">=md" ) {
-            //     max-width: 600px;
-            //     // previously had this as 588px as per the figma design but on live the 'journey' in the final sentence is on the third line not under it - where should this be?
-            // }
         }
 
         &-btn {
