@@ -1,48 +1,80 @@
 .floating {
-    margin-top: 48px;
+    margin-top: 52px;
     width: 100%;
-    text-align: center;
-    display:grid;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+    @include media ( ">md" ) {
+        text-align: center;
+    }
+
+    &__block {
+        flex-direction: row;
+        max-height: fit-content;
+        margin-top: 150px;
+        height: fit-content;
+        width: 100%;
+        padding: 0;    
+    }
 
     &__title {
         color: $tws_coral;
         font-family: $font-handwritten;
         transform: rotate(-90deg);
         font-weight: 400;
-        line-height: 99px;
-        position: absolute;
-        font-size: 74px;
+        line-height: 49px;
+        position: relative;
+        font-size: 37px;
         z-index: 2;
-        left: -140px;
+        margin: 0px 0px 0px;
+        padding: 0;
+        width: 20%;
+        top: 30px;
+        white-space: nowrap;
+    
+        @include media ( ">=md" ) {
+            line-height: 99px;
+            font-size: 74px;
+            left: -140px;
+        }
     }
 
-    &__img {
-        padding: 16px;
-        max-width: 792px;
-        width: 100%;
+    &__img { 
+        right: 16px;
+        margin-right: 16px; 
+        position: absolute;
+        width: 80%;
         margin: auto;
         -webkit-filter: drop-shadow(16px 16px 0px $rose);
         filter: drop-shadow(16px 16px 0px $rose);
+        top: 0px;
+
+        @include media ( ">md" ) {
+            max-width: 792px;
+            width: 100%;
+        }
     }
 
-    &__shadow {
-        background-color: $rose;
-        z-index: -1;
-    }
 }
 
 .textbox {
     background-color: $seashell;
-    width: fit-content;
+    max-width: 100%;
     text-align: center;
-    margin-left: 50%;
-    z-index: 2;
+    padding: 16px 24px;
+    margin: 0px 0px;
+
+    @include media ( ">md" ) {
+        margin-left: 50%;
+        z-index: 2;
+    }
 
     &__brand-name {
         color: $tws_coral;
         font-family: $font-regular;
         text-transform: uppercase;
-        padding-top: 64px;
+        padding-top: 84px;
     }
 
     &__header {
@@ -57,11 +89,17 @@
     &__info {
         font-family: $font-regular;
         color: $tws_black;
-        width: 386px;
-        padding: 16px 64px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+
+        @include media ( ">=md" ) {
+            width: 386px;
+            padding: 16px 64px;
+        }
     }
 
     &__info-btn {
-        margin-bottom: 64px;
+        margin: 16px 0px 64px;
     }
 }
