@@ -44,6 +44,10 @@
         width: 20%;
         white-space: nowrap;
         top: 250px;
+
+        @media (min-width: 450px) {
+            font-size: 48px;
+        }
     
         @include media ( ">=md" ) {
             line-height: 99px;
