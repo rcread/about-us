@@ -6,7 +6,6 @@
     position: relative;
     margin: auto;
     
-
     @include media ( ">=md" ) {
         text-align: center;
         padding: 0;
@@ -19,7 +18,7 @@
 
     &__block {
         max-height: fit-content;
-        margin-top: 150px;
+        margin-top: 100px;
         height: fit-content;
         width: 100%;
         text-align: right;
@@ -28,46 +27,6 @@
             margin-top: 0px;
         }
     }   
-
-    &__title {
-        color: $tws_coral;
-        font-family: $font-handwritten;
-        transform: rotate(-90deg);
-        font-weight: 400;
-        line-height: 49px;
-        position: relative;
-        font-size: 37px;
-        z-index: 2;
-        margin: 0px 0px 0px;
-        padding: 0;
-        width: 20%;
-        white-space: nowrap;
-        top: 250px;
-
-        @media (min-width: 450px) {
-            font-size: 48px;
-        }
-    
-        @include media ( ">=md" ) {
-            line-height: 99px;
-            font-size: 54px;
-            left: -140px;
-            width: 50%;
-            top: 320px;
-        }
-
-        @include media ( ">=lg" ) {
-            top: 250px;
-            width: 50%;
-            font-size: 64px;
-        }
-
-        @include media ( ">=xl" ) {
-            font-size: 80px;
-            width: 45%;
-            top: 350px;
-        }
-    }
 
     &__img { 
         right: 16px;
@@ -112,21 +71,14 @@
         padding-top: 84px;
     }
 
-    &__header {
-        font-family: $font-heading;
-        color: $tws_black;
-        font-weight: 300;
-        line-height: 40px;
-        font-size: 32px;
-        margin: 0px;
-    }
-
     &__info {
         font-family: $font-regular;
         color: $tws_black;
         width: 100%;
         font-size: 16px;
         line-height: 24px;
+        margin: 0px;
+        padding: 16px 0px;
 
         @include media ( ">=md" ) {
             width: 386px;
