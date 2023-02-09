@@ -3,23 +3,8 @@
     text-align: center;
     margin: 100px 0px 48px;
 
-    @include media ( "<=sm" ) {
+    @include media ( "<md" ) {
         margin: 64px 0px 0px;
-    }
-    
-    &__header {
-        color: $tws_black;
-        font-family: $font-heading;
-        font-style: normal;
-        font-size: 24px;
-        font-weight: 300;
-        line-height: 32px;
-        margin: 0px 16px;
-
-        @include media ( ">=md" ) {
-            font-size: 32px;
-            line-height: 40px;
-        }
     }
 
     &__info {
@@ -33,7 +18,6 @@
             padding: 16px;
             max-width: 600px;
             margin: 0 auto;
-            margin-top: 16px;
         }
 
         &-btn {
