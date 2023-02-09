@@ -56,12 +56,16 @@
     z-index: -1;
 
     @include media ( ">=md" ) {
-        margin-left: 45%;
+        margin-left: 30%;
         z-index: 2;
         width: fit-content;
         padding: 0;
         top: -125px;
         margin-right: 45px;
+    }
+
+    @include media ( ">=lg" ) {
+        margin-left: 45%;
     }
 
     &__brand-name {
