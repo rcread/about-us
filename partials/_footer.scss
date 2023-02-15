@@ -1,0 +1,161 @@
+.footer {
+    padding: 80px 32px 20px;
+    background-color: $tws_blue;
+
+    &__menu {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 0;
+        max-width: 1264px;
+
+        @include media ( ">sm" ) {
+            display: flex;
+            flex-direction: row;
+        }
+
+        @include media ( ">=lg" ) {
+            margin: auto;
+        }
+
+        &-section {
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            width: 172px;
+            margin-top: 0;
+        }
+
+        &-heading {
+            color: $tws_white;
+            font-family: $font-regular;
+            font-size: 14px;
+        }
+
+        &-list {
+            list-style: none;
+            padding: 0px;
+        }
+    }
+
+    &__link {
+        color: $tws_white;
+        font-family: $font-regular;
+        font-size: 14px;
+        padding: 6px 0px;
+        cursor: pointer;
+
+        @include media ( ">=lg" ) {
+            max-width: 222px;
+        }
+
+        @include media ( ">=xl" ) {
+            max-width: 282px;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &-off {
+            color: $tws_white;
+            font-family: $font-regular;
+            font-size: 14px;
+            padding: 0px 0px 12px;
+            cursor: default;
+        }
+
+        &-button {
+            text-transform: uppercase;
+            font-family: $font-regular;
+            color: $tws_white;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+            border: 1px solid $tws_white;
+            padding: 0px 15px;
+            width: fit-content;
+
+            &:hover {
+                color: $tws_coral;
+                border: 1px solid $tws_coral;
+                cursor: pointer;
+            }
+        }
+
+        &-app {
+            max-width: 113px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__base {
+        width: 100%;
+        max-width: 1264px;
+        color: $tws_white;
+        font-family: $font-regular;
+        font-size: 14px;
+        display: flex;
+        
+        @include media ( ">sm" ) {
+            justify-content: space-between;
+
+            &-left {
+                text-align: left;
+            }
+
+            &-right {
+                text-align: right;
+                justify-content: right;
+            }
+        }
+
+        @include media ( ">lg" ) {
+            margin: auto;
+            max-width: 1264px;
+        }
+        
+        &-contact {
+            padding: 0px 24px 0px 0px;
+            text-align: left;
+            white-space: nowrap;
+        }
+    }
+
+    &__socials {
+        padding-right: 10px;
+    }
+}
+
+.divider {
+    height: 1px;
+    background-color: $tws_white;
+    opacity: 20%;
+    margin-bottom: 16px;
+
+    // &-hidden {
+    //     @include media ( ">md" ) {
+    //         display: none;
+    //     }
+    // }
+}
+
+.company-name {
+    display: inline-block;
+}
+
+.heading-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow-up {
+    display: none;
+}
+
+.arrow-down {
+    display: none;
+}
