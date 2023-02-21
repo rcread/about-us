@@ -1,0 +1,101 @@
+
+.articles {
+    width: 100%;
+
+    &__header {
+        text-align: center;
+        font-size: 28px;
+        max-width: 710px;
+        margin: auto;
+        padding: 0px 20px 96px;
+
+        @include media ( ">md" ) {
+            font-size: 32px;
+        }
+    }
+}
+
+.separator {
+    height: 5px;
+    background-color: $tws_coral;
+    width: 50px;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 32px;
+}
+
+.coral {
+    color: $tws_coral;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 40px;
+
+    &__tile {
+        max-width: 1264px;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        @include media ( ">md" ) {
+            width: fit-content;
+            flex-direction: row;
+            margin: auto;
+            padding-left: 30px;
+        }
+
+        &-row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        &-item {
+            padding: 0px 10px 10px 0px;
+            flex-direction: row;
+            max-width: 172px;
+
+            @include media ( "<sm" ) {
+                width: 80%;
+            }
+
+            @include media ( ">md" ) {
+                max-width: 180px;
+            }
+
+            @include media ( ">lg" ) {
+                max-width: 230px;
+                padding: 0px 30px 30px 0px;
+            }
+
+            @include media ( ">xl" ) {
+                max-width: 300px;
+            }
+
+            &-hide {
+                padding: 0px 10px 10px 0px;
+                max-width: 180px;
+
+                @include media ( "<=md" ) {
+                    display: none;
+                }
+
+                @include media ( ">lg" ) {
+                    max-width: 230px;
+                    padding: 0px 30px 30px 0px;
+                }
+    
+                @include media ( ">xl" ) {
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+}

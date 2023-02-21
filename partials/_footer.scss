@@ -8,35 +8,67 @@
         flex-direction: column;
         justify-content: space-evenly;
         padding-left: 0;
+        margin-left: 0;
         max-width: 1264px;
 
-        @include media ( ">sm" ) {
+        @include media ( ">md" ) {
             display: flex;
             flex-direction: row;
         }
 
         @include media ( ">=lg" ) {
             margin: auto;
+            justify-content: left;
         }
 
         &-section {
-            margin-right: 20px;
             display: flex;
             flex-direction: column;
-            width: 172px;
-            margin-top: 0;
+            margin: 0;
+
+            @include media ( ">md" ) {
+                width: 172px;
+                margin: 0px 10px 0px 0px;
+            }
+    
+            @include media ( ">=lg" ) {
+                width: 222px;
+            }
+
+            @include media ( ">xl" ) {
+                margin: 0px 125px 0px 0px;
+            }
         }
 
         &-heading {
             color: $tws_white;
             font-family: $font-regular;
             font-size: 14px;
+            white-space: nowrap;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+
+            @include media ( ">md" ) {
+                margin-bottom: 0px;
+            }
         }
 
         &-list {
             list-style: none;
             padding: 0px;
         }
+
+        &-row {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 40px;
+        }
+
+        &-details {
+            width: 172px;
+            margin-right: 40px;
+        }
+
     }
 
     &__link {
@@ -48,6 +80,7 @@
 
         @include media ( ">=lg" ) {
             max-width: 222px;
+            white-space: nowrap;
         }
 
         @include media ( ">=xl" ) {
@@ -64,6 +97,11 @@
             font-size: 14px;
             padding: 0px 0px 12px;
             cursor: default;
+            white-space: nowrap;
+
+            @include media ( "<=md" ) {
+                padding: 0px 20px 0px 0px;
+            }
         }
 
         &-button {
@@ -76,6 +114,7 @@
             border: 1px solid $tws_white;
             padding: 0px 15px;
             width: fit-content;
+            white-space: nowrap;
 
             &:hover {
                 color: $tws_coral;
@@ -85,31 +124,41 @@
         }
 
         &-app {
-            max-width: 113px;
+            max-height: 30px;
+            width: fit-content;
+
             &:hover {
                 cursor: pointer;
             }
         }
     }
 
-    &__base {
+    &__bottom {
         width: 100%;
         max-width: 1264px;
         color: $tws_white;
         font-family: $font-regular;
         font-size: 14px;
         display: flex;
-        
+        flex-direction: column;
+
         @include media ( ">sm" ) {
             justify-content: space-between;
+            flex-direction: row;
 
             &-left {
                 text-align: left;
+                display: flex;
+                flex-wrap: wrap;
             }
 
             &-right {
-                text-align: right;
-                justify-content: right;
+                white-space: wrap;
+
+                @include media ( ">md" ) {
+                    text-align: right;
+                    justify-content: right;
+                }
             }
         }
 
@@ -117,16 +166,38 @@
             margin: auto;
             max-width: 1264px;
         }
-        
-        &-contact {
+
+        &-terms {
             padding: 0px 24px 0px 0px;
             text-align: left;
             white-space: nowrap;
+            
+
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
         }
     }
 
     &__socials {
         padding-right: 10px;
+
+        @include media ( "<=md" ) {
+            padding-right: 30px;
+            height: 20px;
+        }
+    }
+}
+
+.align {
+    display: flex;
+    flex-direction: row;
+
+    &-horizon {
+        @include media ( "<md" ) {
+            padding-right: 40px;
+        }
     }
 }
 
@@ -135,12 +206,18 @@
     background-color: $tws_white;
     opacity: 20%;
     margin-bottom: 16px;
+    max-width: 1264px;
+    margin-left: auto;
+    margin-right: auto;
 
-    // &-hidden {
-    //     @include media ( ">md" ) {
-    //         display: none;
-    //     }
-    // }
+    &__collapse {
+        display: block;
+        width: 100%;
+
+        @include media ( ">md" ) {
+            display: none;
+        }
+    }
 }
 
 .company-name {
@@ -158,4 +235,11 @@
 
 .arrow-down {
     display: none;
+}
+
+.menu-details {
+    @include media ( "<=md" ) {
+        display: flex;
+        flex-direction: row;
+    }
 }
