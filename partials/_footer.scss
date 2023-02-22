@@ -5,7 +5,7 @@
     &__menu {
         list-style: none;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         padding-left: 0;
         margin-left: 0;
@@ -25,18 +25,21 @@
             display: flex;
             flex-direction: column;
             margin: 0;
+            width: 100%;
 
             @include media ( ">md" ) {
-                width: 172px;
-                margin: 0px 10px 0px 0px;
-            }
-    
-            @include media ( ">=lg" ) {
-                width: 222px;
+                width: 20%;
             }
 
-            @include media ( ">xl" ) {
-                margin: 0px 125px 0px 0px;
+            @include media ( ">=lg" ) {
+                width: 25%;
+            }
+
+            &--narrow {
+                @include media ( "<=md" ) {
+                    width: 50%;
+                }
+                
             }
         }
 
@@ -126,6 +129,7 @@
         &-app {
             max-height: 30px;
             width: fit-content;
+            
 
             &:hover {
                 cursor: pointer;
@@ -143,23 +147,9 @@
         flex-direction: column;
 
         @include media ( ">sm" ) {
-            justify-content: space-between;
+            justify-content: flex-start;
             flex-direction: row;
-
-            &-left {
-                text-align: left;
-                display: flex;
-                flex-wrap: wrap;
-            }
-
-            &-right {
-                white-space: wrap;
-
-                @include media ( ">md" ) {
-                    text-align: right;
-                    justify-content: right;
-                }
-            }
+            flex-wrap: wrap;
         }
 
         @include media ( ">lg" ) {
@@ -167,16 +157,27 @@
             max-width: 1264px;
         }
 
-        &-terms {
-            padding: 0px 24px 0px 0px;
-            text-align: left;
-            white-space: nowrap;
-            
+    }
 
-            &:hover {
-                text-decoration: underline;
-                cursor: pointer;
+    &__terms {
+        margin: 0px 24px 8px 0px;  
+
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        &-copyright {
+            white-space: nowrap;
+
+            @include media ( ">md" ) {
+                
             }
+        }
+
+        @include media ( ">md" ) {
+            // margin-left: auto;
+
         }
     }
 
@@ -186,17 +187,6 @@
         @include media ( "<=md" ) {
             padding-right: 30px;
             height: 20px;
-        }
-    }
-}
-
-.align {
-    display: flex;
-    flex-direction: row;
-
-    &-horizon {
-        @include media ( "<md" ) {
-            padding-right: 40px;
         }
     }
 }
