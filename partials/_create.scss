@@ -23,6 +23,11 @@
 
 .underline {
     text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+        color: $tws_coral;
+    }
 }
 
 .bow-large {

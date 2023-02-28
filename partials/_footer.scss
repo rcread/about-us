@@ -59,6 +59,12 @@
         &-list {
             list-style: none;
             padding: 0px;
+
+            &--hidden {
+                @include media ( "<md" ) {
+                    display: none;
+                }
+            }
         }
 
         &-row {
@@ -71,7 +77,6 @@
             width: 172px;
             margin-right: 40px;
         }
-
     }
 
     &__link {
@@ -215,6 +220,10 @@
 .heading-container {
     display: flex;
     justify-content: space-between;
+
+    @include media ( "<md" ) {
+        cursor: pointer;
+    }
 }
 
 .arrow-up {
@@ -222,7 +231,9 @@
 }
 
 .arrow-down {
-    display: none;
+    @include media ( ">md" ){
+        display: none;
+    } 
 }
 
 .menu-details {
