@@ -232,10 +232,6 @@
     }
 }
 
-.arrow-up {
-    display: none;
-}
-
 .arrow-down {
     @include media ( ">md" ){
         display: none;
@@ -264,6 +260,12 @@
             margin-right: auto;
             width: 90%;
             margin-top: 55px;
+        }
+
+        &:active {
+            .arrow-down {
+                transform: rotate(180deg);
+            }
         }
     }
 }
