@@ -19,10 +19,12 @@ let i;
 for (i = 0; i < expandMenu.length; i++) {
   expandMenu[i].addEventListener("click", function() {
     this.classList.toggle("active");
+    this.querySelector(".arrow-down").classList.toggle("arrow-active");
     let footerMenuList = this.nextElementSibling;
     if (window.innerWidth < 768 & footerMenuList.style.display === "block") {
       footerMenuList.style.display = "none";
-    } else {
+    } 
+    else {
       footerMenuList.style.display = "block";
     }
   });

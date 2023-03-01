@@ -238,6 +238,10 @@
     } 
 }
 
+.arrow-active {
+    transform: rotate(180deg);
+}
+
 .menu-details {
     @include media ( "<=md" ) {
         display: flex;
@@ -260,12 +264,6 @@
             margin-right: auto;
             width: 90%;
             margin-top: 55px;
-        }
-
-        &:active {
-            .arrow-down {
-                transform: rotate(180deg);
-            }
         }
     }
 }
