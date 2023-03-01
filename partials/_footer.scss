@@ -211,6 +211,12 @@
             display: none;
         }
     }
+
+    &--hidden {
+        @include media ( "<md" ) {
+            display: none;
+        }
+    }
 }
 
 .company-name {
@@ -240,5 +246,24 @@
     @include media ( "<=md" ) {
         display: flex;
         flex-direction: row;
+    }
+}
+
+.open-menu {
+    @include media ( "<md" ) {
+        &::after {
+            content: "";
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            height: 1px;
+            background-color: $tws_white;
+            max-width: 768px;
+            opacity: 20%;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            margin-top: 55px;
+        }
     }
 }

@@ -12,7 +12,8 @@ document.querySelector("#copyrightYear").innerHTML = yyyy;
 //     }
 // })
 
-let expandMenu = document.getElementsByClassName("heading-container");
+let expandMenu = document.getElementsByClassName("open-menu");
+let arrow = document.getElementsByClassName("arrow-down");
 let i;
 
 for (i = 0; i < expandMenu.length; i++) {
