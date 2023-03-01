@@ -21,7 +21,7 @@ for (i = 0; i < expandMenu.length; i++) {
     this.classList.toggle("active");
     this.querySelector(".arrow-down").classList.toggle("arrow-active");
     let footerMenuList = this.nextElementSibling;
-    if (window.innerWidth < 768 & footerMenuList.style.display === "block") {
+    if (window.matchMedia ('(width: <768px)') & footerMenuList.style.display === "block") {
       footerMenuList.style.display = "none";
     } 
     else {
