@@ -2,16 +2,6 @@ let today = new Date();
 let yyyy = today.getFullYear();
 document.querySelector("#copyrightYear").innerHTML = yyyy;
 
-// const footerMenu = document.querySelector(".heading-container");
-// const footerMenuList = document.querySelector(".footer__menu-list")
-
-// footerMenu.addEventListener("click", (expandMenu) => {
-//     function expandMenu() {
-//         footerMenu.classList.toggle("active");
-//         footerMenuList.classList.toggle("active");
-//     }
-// })
-
 let expandMenu = document.getElementsByClassName("open-menu");
 let arrow = document.getElementsByClassName("arrow-down");
 let i;
