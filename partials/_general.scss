@@ -240,7 +240,6 @@ body {
     font-family: $font-handwritten;
     transform: rotate(-90deg);
     font-weight: 400;
-    line-height: 49px;
     position: relative;
     font-size: 37px;
     z-index: 2;
@@ -248,29 +247,10 @@ body {
     padding: 0;
     width: 20%;
     white-space: nowrap;
-    top: 250px;
+}
 
-    @media (min-width: 450px) {
-        font-size: 48px;
-    }
-
-    @include media ( ">=md" ) {
-        line-height: 99px;
-        font-size: 54px;
-        left: -140px;
-        width: 50%;
-        top: 320px;
-    }
-
-    @include media ( ">=lg" ) {
-        top: 250px;
-        width: 50%;
-        font-size: 64px;
-    }
-
-    @include media ( ">=xl" ) {
-        font-size: 80px;
-        width: 45%;
-        top: 350px;
-    }
+.card-heading {
+    font-family: $font-heading;
+    color: $tws_black;
+    margin-bottom: 0;
 }

@@ -39,7 +39,6 @@
                 @include media ( "<=md" ) {
                     width: 50%;
                 }
-                
             }
         }
 
@@ -250,10 +249,13 @@
 }
 
 .open-menu {
-    @include media ( "<md" ) {
+    display: flex;
+
+    @include media ( "<=md" ) {
         &::after {
             content: "";
             display: flex;
+            align-items: flex-end;
             flex-direction: column;
             position: absolute;
             height: 1px;
@@ -264,6 +266,7 @@
             margin-right: auto;
             width: 90%;
             margin-top: 55px;
+            padding: 0px 32px 0px;
         }
     }
 }
