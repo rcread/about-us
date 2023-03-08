@@ -152,7 +152,6 @@
 
     &__bottom {
         width: 100%;
-        max-width: 1264px;
         color: $tws_white;
         font-family: $font-regular;
         font-size: 14px;
@@ -167,7 +166,6 @@
 
         @include media ( ">lg" ) {
             margin: auto;
-            max-width: 1264px;
         }
     }
 
