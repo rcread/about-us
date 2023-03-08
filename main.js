@@ -2,8 +2,8 @@ let today = new Date();
 let yyyy = today.getFullYear();
 document.querySelector("#copyrightYear").innerHTML = yyyy;
 
-let expandMenu = document.getElementsByClassName("open-menu");
-let arrow = document.getElementsByClassName("arrow-down");
+const expandMenu = document.getElementsByClassName("open-menu");
+const arrow = document.getElementsByClassName("arrow-down");
 let i;
 
 const mediaQueryList = window.matchMedia("(max-width: 768px)");
@@ -46,3 +46,7 @@ const toggleFooterMenu = (e) => {
 toggleFooterMenu(mediaQueryList);
 
 mediaQueryList.addEventListener("change", toggleFooterMenu);
+
+function scrollToTop() {
+  window.onclick(0, 0)
+}
