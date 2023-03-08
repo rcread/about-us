@@ -107,18 +107,18 @@
         &:hover {
             text-decoration: underline;
         }
+    }
 
-        &-off {
-            color: $tws_white;
-            font-family: $font-regular;
-            font-size: 14px;
-            padding: 0px 0px 12px;
-            cursor: default;
-            white-space: nowrap;
+    &__contact {
+        color: $tws_white;
+        font-family: $font-regular;
+        font-size: 14px;
+        padding: 6px 0px;
+        cursor: pointer;
+        text-decoration: none;
 
-            @include media ( "<=md" ) {
-                padding: 0px 20px 0px 0px;
-            }
+        &:hover {
+            text-decoration: underline;
         }
     }
 
