@@ -26,36 +26,36 @@
         @include media ( ">md" ) {
             margin-top: 0px;
         }
-
-        &-handwritten {
-            top: 250px;
-            line-height: 49px;
-
-            @media (min-width: 450px) {
-                font-size: 48px;
-            }
-
-            @include media ( ">=md" ) {
-                line-height: 99px;
-                font-size: 54px;
-                left: -140px;
-                width: 50%;
-                top: 320px;
-            }
-
-            @include media ( ">=lg" ) {
-                top: 250px;
-                width: 50%;
-                font-size: 64px;
-            }
-
-            @include media ( ">=xl" ) {
-                font-size: 80px;
-                width: 45%;
-                top: 350px;
-            }
-        }
     }   
+
+    &__handwritten {
+        top: 250px;
+        line-height: 49px;
+
+        @media (min-width: 450px) {
+            font-size: 48px;
+        }
+
+        @include media ( ">=md" ) {
+            line-height: 99px;
+            font-size: 54px;
+            left: -140px;
+            width: 50%;
+            top: 320px;
+        }
+
+        @include media ( ">=lg" ) {
+            top: 250px;
+            width: 50%;
+            font-size: 64px;
+        }
+
+        @include media ( ">=xl" ) {
+            font-size: 80px;
+            width: 45%;
+            top: 350px;
+        }
+    }
 
     &__img { 
         right: 16px;

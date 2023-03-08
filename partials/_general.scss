@@ -172,20 +172,20 @@ body {
         width: 100%;
         padding: 0px;
         margin: 0px;
-    
-        &-item {
-            margin: 32px 8px 0px;
-            padding: 0px 0px 8px;
-            color: $tws_black;
-            border-bottom: 2px solid $tws_white;
-            letter-spacing: 0.8px;
-            white-space: nowrap;
-            list-style: none;
-            line-height: 20px;
-            cursor: pointer;
-    
-            &:hover { border-bottom: 2px solid $tws_coral; }
-        }
+    }
+
+    &__item {
+        margin: 32px 8px 0px;
+        padding: 0px 0px 8px;
+        color: $tws_black;
+        border-bottom: 2px solid $tws_white;
+        letter-spacing: 0.8px;
+        white-space: nowrap;
+        list-style: none;
+        line-height: 20px;
+        cursor: pointer;
+
+        &:hover { border-bottom: 2px solid $tws_coral; }
     }
 }
 
@@ -235,7 +235,7 @@ body {
     }
 }
 
-.handwritten-title {
+.handwrittenTitle {
     color: $tws_coral;
     font-family: $font-handwritten;
     transform: rotate(-90deg);
@@ -249,7 +249,7 @@ body {
     white-space: nowrap;
 }
 
-.card-heading {
+.cardHeading {
     font-family: $font-heading;
     color: $tws_black;
     margin-bottom: 0;
