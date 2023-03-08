@@ -4,6 +4,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 .header {
     height: 48px;
     font-weight: 400;
@@ -260,11 +264,6 @@ body {
     margin-bottom: 0;
 }
 
-.features {
-    display: flex;
-    width: 100%;
-}
-
 #scrollBtn {
     position: fixed;
     width: 48px;
@@ -285,6 +284,5 @@ body {
     img {
         margin-top: 18px;
         text-align: center;
-
     }
 }

@@ -47,25 +47,6 @@ toggleFooterMenu(mediaQueryList);
 
 mediaQueryList.addEventListener("change", toggleFooterMenu);
 
-let scrollToTop = getElementsByClassName("scroll-btn");
-scrollToTop.addEventListener("click", function(){
-
-})
-
-
-
-// let scrollToTop = document.getElementById("scrollBtn");
-// window.onscroll = function () { scrollFunction() };
-
-// function scrollFunction() {
-//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//     scrollToTop.style.display = "block";
-//   } else {
-//     scrollToTop.style.display = "none";
-//   }
-// }
-
-// function topFunction() {
-//   document.body.scrollTop = 0;
-//   document.documentElement.scrollTop = 0;
-// }
+function scrollToTop() {
+  window.scrollTo(0, 0)
+}
