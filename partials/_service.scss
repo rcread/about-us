@@ -6,22 +6,20 @@
     @include media ( "<md" ) {
         margin: 64px 0px 0px;
     }
-
-    &__info {
         
-        &-text {
-            color: $tws_black;
-            font-family: $font-regular;
-            font-size: 16px;
-            line-height: 24px;
-            font-weight: 400;
-            padding: 16px;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        &-btn {
-            margin: 32px 0px 0px;
-        }
+    &__text {
+        color: $tws_black;
+        font-family: $font-regular;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        padding: 16px;
+        max-width: 600px;
+        margin: 0 auto;
     }
+
+    &__btn {
+        margin: 32px 0px 0px;
+    }
+
 }

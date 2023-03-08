@@ -1,4 +1,4 @@
-.create-list {
+.giftList {
     width: 100%;
     text-align: center;
     font-family: $font-regular;
@@ -9,14 +9,14 @@
         margin: 24px 0px 32px 0px;
     }
 
+    &__btn {
+        width: 142px;
+        margin: auto;
+    }
+    
     &__chat {
         padding: 24px 0px 96px;
         width: 347px;
-        margin: auto;
-    }
-
-    &-btn {
-        width: 142px;
         margin: auto;
     }
 }
@@ -30,11 +30,7 @@
     }
 }
 
-.bow-large {
-    height: 30px;
-    width: 58px;
-}
-
-.create--margin {
+//not sure I need this?
+.create--noMargin {
     margin: 0;
 }

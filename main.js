@@ -2,8 +2,8 @@ let today = new Date();
 let yyyy = today.getFullYear();
 document.querySelector("#copyrightYear").innerHTML = yyyy;
 
-let expandMenu = document.getElementsByClassName("open-menu");
-let arrow = document.getElementsByClassName("arrow-down");
+const expandMenu = document.getElementsByClassName("open-menu");
+const arrow = document.getElementsByClassName("arrowDown");
 let i;
 
 const mediaQueryList = window.matchMedia("(max-width: 768px)");
@@ -11,14 +11,14 @@ const mediaQueryList = window.matchMedia("(max-width: 768px)");
 const toggleFooterMenu = (e) => {
   for (i = 0; i < expandMenu.length; i++) {
     const menuLists = document.querySelectorAll(".footer__menu-list--hidden");
-    const arrows = document.querySelectorAll(".arrow-down");
+    const arrows = document.querySelectorAll(".arrowDown");
 
     menuLists.forEach((menuList) => {
       menuList.style.display = "none";
     });
 
     arrows.forEach((arrow) => {
-      arrow.classList.remove("arrow-active");
+      arrow.classList.remove("arrow--active");
     });
 
     if (!e.matches) {
@@ -29,7 +29,7 @@ const toggleFooterMenu = (e) => {
 
     expandMenu[i].addEventListener("click", function () {
       this.classList.toggle("active");
-      this.querySelector(".arrow-down").classList.toggle("arrow-active");
+      this.querySelector(".arrowDown").classList.toggle("arrow--active");
       let footerMenuList = this.nextElementSibling;
 
       if (e.matches) {
@@ -46,3 +46,26 @@ const toggleFooterMenu = (e) => {
 toggleFooterMenu(mediaQueryList);
 
 mediaQueryList.addEventListener("change", toggleFooterMenu);
+
+let scrollToTop = getElementsByClassName("scroll-btn");
+scrollToTop.addEventListener("click", function(){
+
+})
+
+
+
+// let scrollToTop = document.getElementById("scrollBtn");
+// window.onscroll = function () { scrollFunction() };
+
+// function scrollFunction() {
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     scrollToTop.style.display = "block";
+//   } else {
+//     scrollToTop.style.display = "none";
+//   }
+// }
+
+// function topFunction() {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+// }
