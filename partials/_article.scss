@@ -34,8 +34,12 @@
     width: 100%;
     margin-bottom: 40px;
     
+    @include media ( "<md" ) {
+        margin-left: 5px;
+    }
+    
     @include media ( ">lg" ) {
-        padding-left: 15px;
+        padding-left: 30px;
     }
 
     &__tile {
