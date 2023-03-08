@@ -48,5 +48,5 @@ toggleFooterMenu(mediaQueryList);
 mediaQueryList.addEventListener("change", toggleFooterMenu);
 
 function scrollToTop() {
-  window.onclick(0, 0)
+  window.scrollTo(0, 0)
 }
