@@ -140,26 +140,16 @@
         </section>
 
         <section class="gallery">
-            <div class="gallery__tile">
-                <div class="gallery__row">
-                    <div><img class="gallery__image" src="img/tile1.jpg"/></div>
-                    <div><img class="gallery__image" src="img/tile2.jpg"/></div>
-                </div>
-                <div class="gallery__row">
-                    <div><img class="gallery__image" src="img/tile3.jpg"/></div>
-                    <div><img class="gallery__image" src="img/tile4.jpg"/></div>
-                </div>
-            </div>
-            <div class="gallery__tile">
-                <div class="gallery__row">
-                    <div><img class="gallery__image" src="img/tile5.jpg"/></div>
-                    <div><img class="gallery__image" src="img/tile6.jpg"/></div>
-                </div>
-                <div class="gallery__row">
-                    <div><img class="gallery__image--hide" src="img/tile7.jpg"/></div>
-                    <div><img class="gallery__image--hide" src="img/tile8.jpg"/></div>
-                </div>
-            </div>
+            <ul class="gallery__row">
+                <li class="gallery__item"><img class="gallery__image" src="img/tile1.jpg"/></li>
+                <li class="gallery__item"><img class="gallery__image" src="img/tile2.jpg"/></li>
+                <li class="gallery__item"><img class="gallery__image" src="img/tile3.jpg"/></li>
+                <li class="gallery__item"><img class="gallery__image" src="img/tile4.jpg"/></li>
+                <li class="gallery__item"><img class="gallery__image" src="img/tile5.jpg"/></li>
+                <li class="gallery__item"><img class="gallery__image" src="img/tile6.jpg"/></li>
+                <li class="gallery__item gallery__item--hide"><img class="gallery__image" src="img/tile7.jpg"/></li>
+                <li class="gallery__item gallery__item--hide"><img class="gallery__image" src="img/tile8.jpg"/></li>
+            </ul>
         </section>
 
         <section class="giftList">
@@ -267,9 +257,12 @@
             </div>
         </section>
 
-        <div id="scrollBtn" onclick="scrollToTop()">
-            <img src="img/up.svg"/>
-        </div>
+        <section class="navigation">
+            <div id="scrollBtn" onclick="scrollToTop()">
+                <img src="img/up.svg"/>
+            </div>
+        </section>
+        
     </footer>
 
     <script src="main.js"></script>
