@@ -20,12 +20,6 @@ body {
     @include media ( ">=lg" ) {
         height: 125px;
     }
-
-    &__container {
-        max-width: 1264px;
-        margin: 0 auto;
-        width: 100%;
-    }
 }
 
 .hamburger {
@@ -229,6 +223,12 @@ body {
     &:hover { background: $tws_coral; }
 }
 
+.container {
+    max-width: 1264px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .heading {
     color: $tws_black;
     font-family: $font-heading;
@@ -265,9 +265,6 @@ body {
 }
 
 .navigation {
-    width: 100%;
-    max-width: 1264px;
-    margin: 0 auto;
     text-align: right;
     display: flex;
     justify-content: end;
@@ -279,7 +276,7 @@ body {
     height: 48px;
     border-radius: 50%;
     background-color: $tws_blue;
-    bottom: 100px;
+    bottom: 80px;
     opacity: 40%;
     border: 1px solid $tws_white;
     z-index: 3;
@@ -294,4 +291,3 @@ body {
         margin-top: 42%;
     }
 }
-

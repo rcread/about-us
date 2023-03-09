@@ -3,7 +3,6 @@
     align-items: flex-end;
     flex-direction: column;
     margin: 0px 16px;
-    max-width: 1264px;
 
     @include media ( ">md" ) {
         display: flex;
@@ -15,10 +14,9 @@
         margin: 0 auto;
     }
 
-    &__container {
+    &__content {
         display: flex;
         flex-direction: column;
-        width: 100%;
 
         @include media ( ">=md" ) {
             width: 50%;
