@@ -1,28 +1,28 @@
 .socials {
-    text-align: center;
-    width: 100%;
-    margin: 96px 0px 64px;
+  text-align: center;
+  width: 100%;
+  margin: 96px 0px 64px;
 
-    @include media ( "<md" ) {
-        margin-top: 37px;
+  @include media("<md") {
+    margin-top: 37px;
+  }
+
+  &__info {
+    font-family: $font-regular;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 588px;
+    margin: 0 auto;
+    padding: 16px 0px 32px;
+
+    @include media("<md") {
+      padding: 16px 16px 32px;
     }
+  }
 
-    &__info {
-        font-family: $font-regular;
-        font-size: 16px;
-        line-height: 24px;
-        max-width: 588px;
-        margin: 0 auto;
-        padding: 16px 0px 32px;
-
-        @include media ( "<md" ) {
-            padding: 16px 16px 32px;
-        }
-    }
-
-    &__btn {
-        margin: 0 auto;
-        width: 124px;
-        text-decoration: none;
-    }
+  &__btn {
+    margin: 0 auto;
+    width: 124px;
+    text-decoration: none;
+  }
 }

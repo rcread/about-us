@@ -1,293 +1,302 @@
 body {
-    margin: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .header {
-    height: 48px;
-    font-weight: 400;
-    font-size: $nav-font-size;
+  height: 48px;
+  font-weight: 400;
+  font-size: $nav-font-size;
 
-    @include media ( ">=md" ) {
-        height: 56px;
-    }
+  @include media(">=md") {
+    height: 56px;
+  }
 
-    @include media ( ">=lg" ) {
-        height: 125px;
-    }
+  @include media(">=lg") {
+    height: 125px;
+  }
 }
 
 .hamburger {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
 
-    @include media ( ">=lg" ) {
-        display: none;
-    }
+  @include media(">=lg") {
+    display: none;
+  }
 
-    &__img {
-        margin: 16px 16px 0px;
-        cursor: pointer;
-    
-        @include media ( ">=md" ) {
-            margin: 19px 16px 0px;
-        }
+  &__img {
+    margin: 16px 16px 0px;
+    cursor: pointer;
+
+    @include media(">=md") {
+      margin: 19px 16px 0px;
     }
+  }
 }
 
 .nav {
-    line-height: 20px;
-    color: $tws_black;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 10px;
-    width: 100%;
-    position: relative;
-    height: 48px;
-    font-family: $font-regular;
+  line-height: 20px;
+  color: $tws_black;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  position: relative;
+  height: 48px;
+  font-family: $font-regular;
 
-    @include media ( ">=md" ) {
-        height: 56px;
-    }
+  @include media(">=md") {
+    height: 56px;
+  }
 
-    @include media ( ">=lg" ) {
-        line-height: 24px;
-        height: 61px;
-    }
+  @include media(">=lg") {
+    line-height: 24px;
+    height: 61px;
+  }
 
-    &__column {
-        width: 33.33%;
-    }    
+  &__column {
+    width: 33.33%;
+  }
 }
 
 .logo {
-    text-align: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 
-    &__bow {
-        height: 10px;
-        width: 19px;
-        margin: 12px 0px 0px;
-    
-        @include media ( ">=lg" ) {
-            height: 19px;
-            width: 37px;
-            margin: 16px 0px 0px;
-        }
+  &__bow {
+    height: 10px;
+    width: 19px;
+    margin: 12px 0px 0px;
 
-        &--large {
-            height: 30px;
-            width: 58px;
-        }
+    @include media(">=lg") {
+      height: 19px;
+      width: 37px;
+      margin: 16px 0px 0px;
     }
-    
-    &__name {
-        width: 117px;
-        height: 6.5px;
-        margin: 7px 0px 0px;
-    
-        @include media ( ">=lg" ) {
-            width: 220px;
-            height: 12px;
-            margin: 13px 0px 0px;
-        }
+
+    &--large {
+      height: 30px;
+      width: 58px;
     }
+  }
+
+  &__name {
+    width: 117px;
+    height: 6.5px;
+    margin: 7px 0px 0px;
+
+    @include media(">=lg") {
+      width: 220px;
+      height: 12px;
+      margin: 13px 0px 0px;
+    }
+  }
 }
 
 .control {
-    text-align-last: right;
+  text-align-last: right;
 
-    &__option {
-        text-align: center;
-        position: relative;
-        display: inline-block;
-        cursor: pointer;
-        height: 20px;
-        text-align: center;
-        margin: 14px 56px 0px 0px;
-    
-        @include media ( ">=md" ) {
-            margin: 16px 56px 0px 0px;
-        }
-    
-        @include media ( ">=lg" ) {
-            margin: 24px 16px 0px 0px;
-            height: 24px;
-        }
+  &__option {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    height: 20px;
+    text-align: center;
+    margin: 14px 56px 0px 0px;
+
+    @include media(">=md") {
+      margin: 16px 56px 0px 0px;
     }
+
+    @include media(">=lg") {
+      margin: 24px 16px 0px 0px;
+      height: 24px;
+    }
+  }
 }
 
 .link {
-    cursor: pointer;
+  cursor: pointer;
 
-    &:hover { text-decoration: underline; }
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .create {
-    background: $tws_blue;
-    color: $tws_white;
-    text-transform: uppercase;
-    width: 94px;
-    padding: 4px 16px;
-    margin-right: 32px;
+  background: $tws_blue;
+  color: $tws_white;
+  text-transform: uppercase;
+  width: 94px;
+  padding: 4px 16px;
+  margin-right: 32px;
 
-    &:hover { background: $tws_coral; }
+  &:hover {
+    background: $tws_coral;
+  }
 
-    &__list {
-        text-align: center;
-        font-weight: bold;
-        letter-spacing: 0.4px;
-    }
+  &__list {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+  }
 }
 
-.create, .findCouple {
-    display: none;
+.create,
+.findCouple {
+  display: none;
 
-    @include media ( ">=lg" ) {
-        display: inline-block;
-    }
+  @include media(">=lg") {
+    display: inline-block;
+  }
 }
 
 .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  font-family: $font-regular;
+
+  @include media("<lg") {
+    display: none;
+  }
+
+  &__list {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    font-family: $font-regular;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
 
-    @include media ( "<lg" ) {
-        display: none;
+  &__item {
+    margin: 32px 8px 0px;
+    padding: 0px 0px 8px;
+    color: $tws_black;
+    border-bottom: 2px solid $tws_white;
+    letter-spacing: 0.8px;
+    white-space: nowrap;
+    list-style: none;
+    line-height: 20px;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 2px solid $tws_coral;
     }
-
-    &__list {
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-        padding: 0px;
-        margin: 0px;
-    }
-
-    &__item {
-        margin: 32px 8px 0px;
-        padding: 0px 0px 8px;
-        color: $tws_black;
-        border-bottom: 2px solid $tws_white;
-        letter-spacing: 0.8px;
-        white-space: nowrap;
-        list-style: none;
-        line-height: 20px;
-        cursor: pointer;
-
-        &:hover { border-bottom: 2px solid $tws_coral; }
-    }
+  }
 }
 
 .search__img {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 17px 0px 7px 17px;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 17px 0px 7px 17px;
 
-    @include media ( ">=md" ) {
-        margin: 21px 0px 7px 17px;
-    }
-    
-    @include media ( ">=lg" ) {
-        margin: 33px 0px 16px 33px;       
-    }
+  @include media(">=md") {
+    margin: 21px 0px 7px 17px;
+  }
+
+  @include media(">=lg") {
+    margin: 33px 0px 16px 33px;
+  }
 }
 
 .button {
-    font-family: $font-regular;
-    text-transform: uppercase;
-    color: $tws_white;
-    background-color: $tws_blue;
-    cursor: pointer;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 700;
-    padding: 12px 24px;
-    letter-spacing: 0.8px;
-    border: 0;
+  font-family: $font-regular;
+  text-transform: uppercase;
+  color: $tws_white;
+  background-color: $tws_blue;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 12px 24px;
+  letter-spacing: 0.8px;
+  border: 0;
 
-    &:hover { background: $tws_coral; }
+  &:hover {
+    background: $tws_coral;
+  }
 }
 
 .container {
-    max-width: 1264px;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 1264px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .heading {
-    color: $tws_black;
-    font-family: $font-heading;
-    font-style: normal;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 32px;
-    margin: 0px 16px;
+  color: $tws_black;
+  font-family: $font-heading;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  margin: 0px 16px;
 
-    @include media ( ">=md" ) {
-        font-size: 32px;
-        line-height: 40px;
-    }
+  @include media(">=md") {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 .handwrittenTitle {
-    color: $tws_coral;
-    font-family: $font-handwritten;
-    transform: rotate(-90deg);
-    font-weight: 400;
-    position: relative;
-    font-size: 37px;
-    z-index: 2;
-    margin: 0px 0px 0px;
-    padding: 0;
-    width: 20%;
-    white-space: nowrap;
+  color: $tws_coral;
+  font-family: $font-handwritten;
+  transform: rotate(-90deg);
+  font-weight: 400;
+  position: relative;
+  font-size: 37px;
+  z-index: 2;
+  margin: 0px 0px 0px;
+  padding: 0;
+  width: 20%;
+  white-space: nowrap;
 }
 
 .cardHeading {
-    font-family: $font-heading;
-    color: $tws_black;
-    margin-bottom: 0;
+  font-family: $font-heading;
+  color: $tws_black;
+  margin-bottom: 0;
 }
 
 .navigation {
-    text-align: right;
-    display: flex;
-    justify-content: end;
+  text-align: right;
+  display: flex;
+  justify-content: end;
 }
 
 #scrollBtn {
-    position: fixed;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background-color: $tws_blue;
-    bottom: 80px;
-    opacity: 40%;
-    border: 1px solid $tws_white;
-    z-index: 3;
-    text-align: center;
-    margin-right: 32px;
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: $tws_blue;
+  bottom: 80px;
+  opacity: 40%;
+  border: 1px solid $tws_white;
+  z-index: 3;
+  text-align: center;
+  margin-right: 32px;
 
-    &:hover {
-        cursor: pointer;
-    }
-    
-    img {
-        margin-top: 40%;
-    }
+  &:hover {
+    cursor: pointer;
+  }
+
+  img {
+    margin-top: 40%;
+  }
 }

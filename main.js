@@ -44,9 +44,23 @@ const toggleFooterMenu = (e) => {
 };
 
 toggleFooterMenu(mediaQueryList);
-
 mediaQueryList.addEventListener("change", toggleFooterMenu);
 
+// let mybutton = document.getElementById("scrollBtn");
+// window.onscroll = function () { scrollFunction() };
+
+// function scrollFunction() {
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     mybutton.style.display = "block";
+//   } else {
+//     mybutton.style.display = "none";
+//   }
+// }
+
+let mybutton = document.getElementById("scrollBtn");
+
+mybutton.style.display = "none";
+
 function scrollToTop() {
-  window.scrollTo(0, 0)
+  window.scrollTo(0, 0);
 }

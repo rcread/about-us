@@ -1,32 +1,32 @@
 .giftList {
-    width: 100%;
-    text-align: center;
-    font-family: $font-regular;
-    font-size: 14px;
-    line-height: 24px;
+  width: 100%;
+  text-align: center;
+  font-family: $font-regular;
+  font-size: 14px;
+  line-height: 24px;
 
-    &__header {
-        margin: 24px 0px 32px 0px;
-    }
+  &__header {
+    margin: 24px 0px 32px 0px;
+  }
 
-    &__btn {
-        width: 142px;
-        margin: auto;
-    }
-    
-    &__chat {
-        padding: 24px 0px 96px;
-        width: 347px;
-        margin: auto;
-    }
+  &__btn {
+    width: 142px;
+    margin: auto;
+  }
+
+  &__chat {
+    padding: 24px 0px 96px;
+    width: 347px;
+    margin: auto;
+  }
 }
 
 .underline {
-    text-decoration: underline;
-    cursor: pointer;
-    color: $tws_black;
+  text-decoration: underline;
+  cursor: pointer;
+  color: $tws_black;
 
-    &:hover {
-        color: $tws_coral;
-    }
+  &:hover {
+    color: $tws_coral;
+  }
 }
