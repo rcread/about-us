@@ -51,7 +51,7 @@ window.onscroll = function () { scrollFunction() };
 scrollButton.style.display = "none";
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.documentElement.scrollTop > 20) {
     scrollButton.style.display = "block";
   } else {
     scrollButton.style.display = "none";
