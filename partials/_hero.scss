@@ -1,56 +1,56 @@
 .hero {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+
+  &__img {
     width: 100%;
-    position: relative;
+    height: auto;
 
-    &__img {
-        width: 100%;
-        height: auto;
+    @include media("<md") {
+      height: 432px;
+      object-fit: cover;
+      object-position: 45%;
+    }
+  }
 
-        @include media ( "<md" ) {
-            height: 432px;
-            object-fit: cover;
-            object-position: 45%;
-        }
+  &__title {
+    text-align: center;
+    font-family: $font-heading;
+    font-size: 32px;
+    margin: 0 auto;
+    position: absolute;
+    font-weight: 300;
+    width: 100%;
+
+    @include media(">=md") {
+      font-size: 48px;
     }
 
-    &__title {
-        text-align: center;
-        font-family: $font-heading;
-        font-size: 32px;
+    &--withShadow {
+      color: white;
+      z-index: 1;
+
+      &::before {
+        content: "";
+        background-color: $tws_black;
+        width: 130px;
+        height: 40px;
+        opacity: 0.43;
+        mix-blend-mode: normal;
+        filter: blur(43.4925px);
         margin: 0 auto;
         position: absolute;
-        font-weight: 300;
-        width: 100%;
+        z-index: -1;
+        left: 50%;
+        transform: translate(-50%);
 
-        @include media ( ">=md" ) {
-            font-size: 48px;
+        @include media(">=md") {
+          height: 87px;
+          width: 338px;
         }
-
-        &--withShadow {
-            color: white;
-            z-index: 1;
-    
-            &::before {
-                content: "";
-                background-color: $tws_black;
-                width: 130px;
-                height: 40px;
-                opacity: 0.43;
-                mix-blend-mode: normal;
-                filter: blur(43.4925px);
-                margin: 0 auto;
-                position: absolute;
-                z-index: -1;
-                left: 50%;
-                transform: translate(-50%);
-    
-                @include media ( ">=md" ) {
-                    height: 87px;
-                    width: 338px;
-                }
-            }
-        }
-    }    
+      }
+    }
+  }
 }

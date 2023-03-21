@@ -1,0 +1,264 @@
+.footer {
+  padding: 80px 32px 20px;
+  background-color: $tws_blue;
+
+  &__section {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 0;
+    margin-left: 0;
+
+    @include media(">md") {
+      display: flex;
+      flex-direction: row;
+    }
+
+    @include media(">=lg") {
+      margin: auto;
+      justify-content: left;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+
+    @include media(">md") {
+      width: 20%;
+    }
+
+    @include media(">=lg") {
+      width: 25%;
+    }
+
+    &--narrow {
+      @include media("<=md") {
+        width: 50%;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @include media("<md") {
+      cursor: pointer;
+    }
+  }
+
+  &__heading {
+    color: $tws_white;
+    font-family: $font-regular;
+    font-size: 14px;
+    white-space: nowrap;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+
+    @include media(">md") {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0px;
+
+    &--hidden {
+      @include media("<md") {
+        display: none;
+      }
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
+
+  &__details {
+    width: 172px;
+    margin-right: 40px;
+  }
+
+  &__link {
+    color: $tws_white;
+    font-family: $font-regular;
+    font-size: 14px;
+    padding: 6px 0px;
+    cursor: pointer;
+
+    @include media(">=lg") {
+      max-width: 222px;
+      white-space: nowrap;
+    }
+
+    @include media(">=xl") {
+      max-width: 282px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__contact {
+    color: $tws_white;
+    font-family: $font-regular;
+    font-size: 14px;
+    padding: 6px 0px;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    font-family: $font-regular;
+    color: $tws_white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    border: 1px solid $tws_white;
+    padding: 0px 15px;
+    width: fit-content;
+    white-space: nowrap;
+
+    &:hover {
+      color: $tws_coral;
+      border: 1px solid $tws_coral;
+      cursor: pointer;
+    }
+  }
+
+  &__app {
+    max-height: 30px;
+    width: fit-content;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__bottom {
+    color: $tws_white;
+    font-family: $font-regular;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+
+    @include media(">sm") {
+      justify-content: flex-start;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    @include media(">lg") {
+      margin: auto;
+    }
+  }
+
+  &__terms {
+    margin: 0px 24px 8px 0px;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    @include media(">md") {
+      flex-direction: row;
+    }
+  }
+
+  &__copyright {
+    white-space: nowrap;
+
+    @include media(">md") {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+
+  &__socials {
+    padding-right: 10px;
+
+    @include media("<=md") {
+      padding-right: 30px;
+      height: 20px;
+    }
+  }
+}
+
+.divider {
+  height: 1px;
+  background-color: $tws_white;
+  opacity: 20%;
+  margin-bottom: 16px;
+  margin-top: 40px;
+
+  &__collapse {
+    display: block;
+    width: 100%;
+
+    @include media(">md") {
+      display: none;
+    }
+  }
+
+  &--hidden {
+    @include media("<md") {
+      display: none;
+    }
+  }
+}
+
+.company-name {
+  display: inline-block;
+}
+
+.arrowDown {
+  @include media(">md") {
+    display: none;
+  }
+}
+
+.arrow--active {
+  transform: rotate(180deg);
+}
+
+.menu-details {
+  @include media("<=md") {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.open-menu {
+  display: flex;
+  width: 100%;
+  position: relative;
+
+  @include media("<=md") {
+    &::after {
+      content: "";
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      position: absolute;
+      height: 1px;
+      background-color: $tws_white;
+      opacity: 20%;
+      width: 100%;
+      margin-top: 55px;
+    }
+  }
+}

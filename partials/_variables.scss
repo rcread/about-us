@@ -1,15 +1,20 @@
-@import "../node_modules/include-media/dist/_include-media.scss"; 
+@import "../node_modules/include-media/dist/_include-media.scss";
 
-$breakpoints: (sm: 375px, md: 768px, lg: 1024px, xl: 1264px);
+$breakpoints: (
+  sm: 375px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1264px,
+);
 
 $tws_black: #191919;
-$tws_white: #FFFFFF;
-$tws_blue: #142D3B;
-$tws_coral: #FF6B64;
-$seashell: #FDF9F6;
-$rose: #FFE6E2;
+$tws_white: #ffffff;
+$tws_blue: #142d3b;
+$tws_coral: #ff6b64;
+$seashell: #fdf9f6;
+$rose: #ffe6e2;
 
-$font-regular: 'Karla Regular';
-$font-heading: 'Juana';
-$font-handwritten: 'Tropical Summer';
+$font-regular: "Karla Regular";
+$font-heading: "Juana";
+$font-handwritten: "Tropical Summer";
 $nav-font-size: 14px;

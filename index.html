@@ -1,121 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us: The Wedding Shop</title>
-    <link rel="stylesheet" href="css/style.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About The Wedding Shop</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/favicon.ico"/>
 
     <style>
-        @font-face{
-        font-family: 'Karla Regular';
+      @font-face {
+        font-family: "Karla Regular";
         font-style: normal;
         font-weight: normal;
-        src: local('Karla Regular'), url('fonts/karla-regular.ttf') format('truetype');
-        }
+        src: local("Karla Regular"),
+          url("fonts/karla-regular.ttf") format("truetype");
+      }
 
-        @font-face{
-        font-family: 'Karla Bold';
+      @font-face {
+        font-family: "Karla Bold";
         font-style: normal;
         font-weight: bold;
-        src: local('Karla Bold'), url('fonts/karla-bold.ttf') format('truetype');
-        }
+        src: local("Karla Bold"), url("fonts/karla-bold.ttf") format("truetype");
+      }
 
-        @font-face{
-        font-family: 'Juana';
+      @font-face {
+        font-family: "Juana";
         font-style: normal;
         font-weight: normal;
-        src: local('Juana'), url('fonts/juana.otf') format('opentype');
-        }
+        src: local("Juana"), url("fonts/juana.otf") format("opentype");
+      }
 
-        @font-face{
-        font-family: 'Tropical Summer';
+      @font-face {
+        font-family: "Tropical Summer";
         font-style: normal;
         font-weight: normal;
-        src: local('Tropical Summer'), url('fonts/tropical-summer.otf') format('opentype');
-        }
+        src: local("Tropical Summer"),
+          url("fonts/tropical-summer.otf") format("opentype");
+      }
     </style>
-    
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        
-        <section class="header__container">
-
-            <nav class="nav">
-                <div class="nav__column search" id="search">
-                    <a href="search.html"> 
-                        <img class="search__img" src="img/search.svg"/>
-                    </a>
-                </div>
-                <a href="index.html"class="nav__column logo">
-                    <img class="logo__bow" src="img/Bow.png"/>
-                    <img class="logo__name" src="img/TWS.png"/>
-                </a>                  
-                <div class="nav__column control">
-                    <div class="control__option link">Login</div>
-                    <div class="control__option link findCouple">Find a Couple</div>
-                    <div class="control__option create">
-                        <div class="create__list">Create a List</div>
-                    </div>
-                    <div class="hamburger"><img class="hamburger__img" src="img/menu.svg"/></div>
-                </div>
-            </nav>
-            
-            <div class="menu">
-                <ul class="menu__list">
-                    <li class="menu__list-item">Brands</li>
-                    <li class="menu__list-item">Products</li>
-                    <li class="menu__list-item">Funds</li>
-                    <li class="menu__list-item">Travel & Experiences</li>
-                    <li class="menu__list-item">Showrooms</li>
-                    <li class="menu__list-item">Inspiration</li>
-                    <li class="menu__list-item">Collections</li>
-                    <li class="menu__list-item">About</li>   
-                </ul>            
+      <section class="header container">
+        <nav class="nav">
+          <div class="nav__column search" id="search">
+            <a href="search.html">
+              <img class="search__img" src="img/search.svg" />
+            </a>
+          </div>
+          <a href="index.html" class="nav__column logo">
+            <img class="logo__bow" src="img/Bow.png" />
+            <img class="logo__name" src="img/TWS.png" />
+          </a>
+          <div class="nav__column control">
+            <div class="control__option link">Login</div>
+            <div class="control__option link findCouple">Find a Couple</div>
+            <div class="control__option create">
+              <div class="create__list">Create a List</div>
             </div>
-
-        </section>
+            <div class="hamburger">
+              <img class="hamburger__img" src="img/menu.svg" />
+            </div>
+          </div>
+        </nav>
+        <div class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">Brands</li>
+            <li class="menu__item">Products</li>
+            <li class="menu__item">Funds</li>
+            <li class="menu__item">Travel & Experiences</li>
+            <li class="menu__item">Showrooms</li>
+            <li class="menu__item">Inspiration</li>
+            <li class="menu__item">Collections</li>
+            <li class="menu__item">About</li>
+          </ul>
+        </div>
+      </section>
     </header>
-    
+
     <main>
-        <section class="hero">
-            <img class="hero__img" src="img/hero2.jpg"/>
-            <h1 class="hero__title hero__title--withShadow">About Us</h1>
-        </section>
+      <section class="hero">
+        <img class="hero__img" src="img/hero2.jpg" />
+        <h1 class="hero__title hero__title--withShadow">About Us</h1>
+      </section>
 
-        <section class="service">
-            <h2 class="heading">Proudly Serving Couples For 30 Years</h2>
-            <div class="service__info">
-                <p class="service__info-text">The Wedding Shop is a multi-award-winning gift list service that has been supporting couples for three decades. It’s often a whirlwind of wedmin and emotions, but we’re here to help, and thrilled to be a part of your exciting journey.</p>
-                <button class="button service__info-btn">Our Service Explained</button>
-            </div>
-        </section>
+      <section class="service">
+        <h2 class="heading">Proudly Serving Couples For 30 Years</h2>
+        <div class="service__info">
+          <p class="service__text">
+            The Wedding Shop is a multi-award-winning gift list service that has
+            been supporting couples for three decades. It’s often a whirlwind of
+            wedmin and emotions, but we’re here to help, and thrilled to be a
+            part of your exciting journey.
+          </p>
+          <button class="button service__btn">Our Service Explained</button>
+        </div>
+      </section>
 
-        <section class="floating">
-            <div class="floating__block">
-               <h2 class="handwritten-title">30 Years Experience</h2>
-               <img class="floating__img" src="img/float.jpg"/>
-            </div>
-            
-            <div class="textbox">
-                <p class="textbox__brand-name">The Wedding Shop</p>
-                <h2 class="heading">Our Promise</h2>
-                <p class="textbox__info">We want your experience to be memorable, meaningful and a lot of fun. Most of all, we want to help you choose gifts you’ll treasure for years to come.</p>
-                <button class="button textbox__info-btn">Our Service</button>
-            </div>
-        </section>
-        
+      <section class="floating">
+        <div class="floating__block">
+          <h2 class="floating__handwritten handwrittenTitle">
+            30 Years Experience
+          </h2>
+          <img class="floating__img" src="img/float.jpg" />
+        </div>
+        <div class="textbox">
+          <p class="textbox__brand">The Wedding Shop</p>
+          <h2 class="heading">Our Promise</h2>
+          <p class="textbox__info">
+            We want your experience to be memorable, meaningful and a lot of
+            fun. Most of all, we want to help you choose gifts you’ll treasure
+            for years to come.
+          </p>
+          <button class="textbox__btn button">Our Service</button>
+        </div>
+      </section>
+
+      <section class="articles">
+        <div class="separator"></div>
+        <h2 class="articles__header heading">
+          We're Dedicated To Putting You At The Heart Of
+          <span class="coral">Everything</span> We Do.
+        </h2>
+      </section>
+
+      <section class="history container">
+        <div class="history__content">
+          <img class="history__image" src="img/ourteam.jpg" />
+          <h3 class="cardHeading">Our Team</h3>
+          <p class="history__text">
+            Passionate, knowledgeable and dedicated - that’s us. We offer an
+            unrivalled personal service full of bright, brilliant individuals
+            striving to put a smile on your face. From our experienced Gift
+            Gurus, to our dedicated Customer Care team, your happiness is our
+            top priority.
+          </p>
+          <div class="history__btn button">Meet Our Team</div>
+        </div>
+        <div class="history__content">
+          <div class="history__content--flex">
+            <div class="history__handwritten handwrittenTitle">Est. 1990</div>
+            <img
+              class="history__image history__img2"
+              src="img/ourhistory.jpg"
+            />
+          </div>
+          <div class="history__content--background">
+            <h3 class="cardHeading">Our History</h3>
+            <p class="history__text">
+              Founded in 1990, we have always strived to work with integrity and
+              honesty. We are proud of our principles, which we live by every
+              day. Wedding gift trends may change, but our values won’t.
+            </p>
+            <div class="history__btn button">Read Our History</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="socials">
+        <h2 class="socials__header heading">Follow Us @TheWeddingShopUK</h2>
+        <div class="socials__info">
+          Go behind the scenes of The Wedding Shop team, discover new interior
+          trends and be the first to know about new gifts added.
+        </div>
+        <a class="socials__btn button" href="https://www.instagram.com/theweddingshopuk/">Follow Us</a>
+      </section>
+
+      <section class="gallery container">
+        <ul class="gallery__row">
+          <li class="gallery__item">
+            <img class="gallery__image" src="img/tile1.jpg" />
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="img/tile2.jpg" />
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="img/tile3.jpg" />
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="img/tile4.jpg" />
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="img/tile5.jpg" />
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="img/tile6.jpg" />
+          </li>
+          <li class="gallery__item gallery__item--hide">
+            <img class="gallery__image" src="img/tile7.jpg" />
+          </li>
+          <li class="gallery__item gallery__item--hide">
+            <img class="gallery__image" src="img/tile8.jpg" />
+          </li>
+        </ul>
+      </section>
+
+      <section class="giftList">
+        <img class="logo__bow--large" src="img/Bow.png" />
+        <h2 class="giftList__header heading">Start Your Wedding Gift List</h2>
+        <div class="giftList__btn button">Create a List</div>
+        <div class="giftList__chat">
+          or, if you have any questions,
+          <a href="mailto:hello@weddingshop.com" class="underline">have a chat with one of our Gift Gurus.</a>
+        </div>
+      </section>
     </main>
 
     <footer>
+      <section class="footer">
+        <div class="footer__section container">
+          <div class="footer__menu">
+            <div class="footer__container open-menu">
+              <h4 class="footer__heading">About Us</h4>
+              <img class="arrowDown" src="img/down.svg" />
+            </div>
+            <ul class="footer__list footer__list--hidden">
+              <li class="footer__link">About Us</li>
+              <li class="footer__link">Our Service Explained</li>
+              <li class="footer__link">How It Works</li>
+              <li class="footer__link">Meet Our Team</li>
+            </ul>
+          </div>
+          <div class="footer__menu">
+            <div class="footer__container open-menu">
+              <h4 class="footer__heading">Customer Care</h4>
+              <img class="arrowDown" src="img/down.svg" />
+            </div>
+            <ul class="footer__list footer__list--hidden">
+              <li class="footer__link">Your Order</li>
+              <li class="footer__link">Returns & Exchanges</li>
+              <li class="footer__link">Delivery</li>
+              <li class="footer__link">FAQs</li>
+            </ul>
+          </div>
 
+          <div class="footer__menu">
+            <div class="footer__container open-menu">
+              <h4 class="footer__heading">Your List</h4>
+              <img class="arrowDown" src="img/down.svg" />
+            </div>
+            <ul class="footer__list footer__list--hidden">
+              <li class="footer__link">Start Your List</li>
+              <li class="footer__link">Manage Your List</li>
+              <li class="footer__link">Book a Showroom Appointment</li>
+              <li class="footer__link">Find Inspiration</li>
+            </ul>
+          </div>
+
+          <div class="footer__menu">
+            <div class="footer__container open-menu">
+              <h4 class="footer__heading">For Wedding Guests</h4>
+              <img class="arrowDown" src="img/down.svg" />
+            </div>
+            <ul class="footer__list footer__list--hidden">
+              <li class="footer__link">Find a Gift List</li>
+              <li class="footer__link">Guest T&Cs</li>
+            </ul>
+          </div>
+        </div>
+        <div class="divider container divider--hidden"></div>
+        <div class="footer__section container">
+          <div class="footer__menu">
+            <div class="footer__container">
+              <h4 class="footer__heading">Contact Us</h4>
+            </div>
+            <ul class="footer__list footer__details">
+              <li class="footer__link">
+                <a class="footer__contact" href="tel:020 7384 8400"
+                  >020 7384 8400</a
+                >
+              </li>
+              <li class="footer__link">
+                <a class="footer__contact" href="mailto:hello@weddingshop.com"
+                  >hello@weddingshop.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu">
+            <h4 class="footer__heading">Follow Us</h4>
+            <ul class="footer__list">
+              <a
+                href="https://www.pinterest.co.uk/weddingshopuk/"
+                target="blank"
+                ><img class="footer__socials" src="img/pin.svg"
+              /></a>
+              <a href="https://facebook.com/theweddingshop" target="blank"
+                ><img class="footer__socials" src="img/fb.svg"
+              /></a>
+              <a
+                href="https://www.youtube.com/channel/UCID13-6OQt9ubZq2OZR2cvQ/featured"
+                target="blank"
+                ><img class="footer__socials" src="img/yt.svg"
+              /></a>
+              <a
+                href="https://www.instagram.com/theweddingshopuk/"
+                target="blank"
+                ><img class="footer__socials" src="img/ig.svg"
+              /></a>
+              <a href="https://twitter.com/" target="blank"
+                ><img class="footer__socials" src="img/tt.svg"
+              /></a>
+            </ul>
+          </div>
+          <div class="footer__menu footer__menu--narrow">
+            <h4 class="footer__heading">Request A Brochure</h4>
+            <ul class="footer__list">
+              <li class="footer__btn">Send Me One</li>
+            </ul>
+          </div>
+          <div class="footer__menu footer__menu--narrow">
+            <h4 class="footer__heading">Download Our App</h4>
+            <ul class="footer__list">
+              <li><img class="footer__app" src="img/App Store.svg" /></li>
+            </ul>
+          </div>
+        </div>
+        <div class="divider container"></div>
+        <div class="footer__bottom container">
+          <a class="footer__terms">Terms & Conditions</a>
+          <a class="footer__terms">Privacy & Cookie Policy</a>
+          <a class="footer__terms">Contact</a>
+          <a class="footer__terms footer__copyright"
+            >&copy; The Wedding Shop <span id="copyrightYear"></span
+          ></a>
+        </div>
+      </section>
+
+      <section class="navigation">
+        <div id="scrollBtn" onclick="scrollToTop()">
+          <img src="img/up.svg" />
+        </div>
+      </section>
     </footer>
 
     <script src="main.js"></script>
-
-</body>
-
+  </body>
 </html>
