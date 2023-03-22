@@ -10,7 +10,7 @@ const mediaQueryList = window.matchMedia("(max-width: 768px)");
 
 const toggleFooterMenu = (e) => {
   for (i = 0; i < expandMenu.length; i++) {
-    const menuLists = document.querySelectorAll(".footer__menu-list--hidden");
+    const menuLists = document.querySelectorAll(".footer__list--hidden");
     const arrows = document.querySelectorAll(".arrowDown");
 
     menuLists.forEach((menuList) => {
