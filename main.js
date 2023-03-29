@@ -61,3 +61,17 @@ function scrollFunction() {
 function scrollToTop() {
   window.scrollTo(0, 0);
 }
+
+function showMenu(){
+  document.querySelector('.hamburger').classList.toggle('open')
+  document.querySelector('.menu__list').classList.toggle('active')
+}
+
+// if ($('.menu__list').hasClass('.active')) {
+//   $('.hamburger__close').show();
+//   $('.hamburger__img').hide();
+// }
+// else ($('.menu__list').hasClass("")) {
+//   $('.hamburger__close').hide();
+//   $('.hamburger__img').show();
+// }
