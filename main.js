@@ -72,16 +72,9 @@ function showMenu(){
   document.querySelector('.control__option--menu, .create--menu, .create__list--menu').classList.toggle('active')
 }
 
-// if ($('.menu__list').hasClass('.active')) {
-//   $('.hamburger__close').show();
-//   $('.hamburger__img').hide();
-// }
-// else ($('.menu__list').hasClass("")) {
-//   $('.hamburger__close').hide();
-//   $('.hamburger__img').show();
-// }
-
 function search(){
   document.querySelector('.search').classList.toggle('open')
   document.querySelector('.searchbar').classList.toggle('active')
+  document.querySelector('.searchbar__label').classList.toggle('active')
+  document.querySelector('.searchbar__input').classList.toggle('active')
 }
