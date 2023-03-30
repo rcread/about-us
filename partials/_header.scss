@@ -185,7 +185,6 @@
         width: 238px;
         height: 100%;
         right: -500px;
-        padding-top: 120px;
       }
     }
   
@@ -230,6 +229,7 @@
       }
   
       &--hidden {
+
         @include media (">=lg") {
           display: none;
         }
@@ -242,6 +242,27 @@
       background-color: $seashell;
       font-family: $font-regular;
       width: 100%;
+    }
+
+    &__btn {
+        list-style: none;
+    }
+
+    &__button {
+        font-family: $font-regular;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        color: white;
+        background-color: $tws_blue;
+        border: 0px;
+        padding: 10px 16px;
+        margin-bottom: 30px;
+
+        &:hover {
+            background-color: $tws_coral;
+            border: 0px;
+            text-decoration: none;
+        }
     }
 }
   

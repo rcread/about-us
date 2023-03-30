@@ -69,6 +69,7 @@ function showMenu(){
   document.querySelector('.hamburger__close').classList.toggle('active')
   document.querySelector('.menu').classList.toggle('active')
   document.querySelector('body').classList.toggle('active')
+  document.querySelector('.background').classList.toggle('active')
   document.querySelector('.control__option--menu, .create--menu, .create__list--menu').classList.toggle('active')
 }
 
