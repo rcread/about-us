@@ -79,4 +79,5 @@ function search(){
   document.querySelector('.searchbar').classList.toggle('active')
   document.querySelector('.searchbar__label').classList.toggle('active')
   document.querySelector('.searchbar__input').classList.toggle('active')
+  document.querySelector('.searchbar__input').value = '';
 }
