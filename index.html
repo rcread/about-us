@@ -45,10 +45,8 @@
     <header class="header">
       <section class="header container">
         <nav class="nav">
-          <div class="nav__column search" id="search">
-            <a href="search.html">
-              <img class="search__img" src="img/search.svg" />
-            </a>
+          <div class="nav__column search" id="search" onclick="search()" onclick="lockScreen">
+            <img class="search__img" src="img/search.svg" />
           </div>
           <a href="index.html" class="nav__column logo">
             <img class="logo__bow" src="img/Bow.png" />
@@ -62,7 +60,8 @@
             </div>
             <button class="hamburger" onclick="showMenu()">
               <img class="hamburger__img" src="img/menu.svg" />
-            </button>
+              <img class="hamburger__close" src="img/close.png"/>
+            </button>             
             <!-- <button class="hamburger" onclick="showMenu()">
               <img class="hamburger__close hamburger__img--closed" src="img/close.png">
             </button>  -->
@@ -70,12 +69,8 @@
         </nav>
 
         <div class="menu">
-           
-          <div class="control__option--hidden create--hidden">
-            <div class="create__list--hidden">Create a List</div>
-          </div>
-
           <ul class="menu__list">
+            
             <li class="menu__item menu__item--hidden">Find a Couple</li>
             <li class="menu__item">Brands</li>
 
@@ -129,7 +124,7 @@
           </ul>
         </div>
 
-        </div>
+        <div class="searchbar"></div>
 
       </section>
     </header>
