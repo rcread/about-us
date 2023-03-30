@@ -249,19 +249,26 @@
     }
 
     &__button {
-        font-family: $font-regular;
-        letter-spacing: 0.4px;
-        text-transform: uppercase;
-        color: white;
-        background-color: $tws_blue;
-        border: 0px;
-        padding: 10px 16px;
-        margin-bottom: 30px;
+        display: none; 
+
+        &.active {
+            display: block;
+            font-family: $font-regular;
+            letter-spacing: 0.4px;
+            text-transform: uppercase;
+            color: white;
+            background-color: $tws_blue;
+            border: 0px;
+            padding: 10px 16px;
+            margin-bottom: 30px;  
+        }
+        
 
         &:hover {
             background-color: $tws_coral;
             border: 0px;
             text-decoration: none;
+            cursor: pointer;
         }
     }
 }
