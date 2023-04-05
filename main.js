@@ -61,3 +61,23 @@ function scrollFunction() {
 function scrollToTop() {
   window.scrollTo(0, 0);
 }
+
+function showMenu(){
+  document.querySelector('.hamburger').classList.toggle('open')
+  document.querySelector('.menu__list').classList.toggle('active')
+  document.querySelector('.hamburger__img').classList.toggle('active')
+  document.querySelector('.hamburger__close').classList.toggle('active')
+  document.querySelector('.menu').classList.toggle('active')
+  document.querySelector('.menu__button').classList.toggle('active')
+  document.querySelector('body').classList.toggle('active')
+  document.querySelector('.background').classList.toggle('active')
+  document.querySelector('.control__option--menu, .create--menu, .create__list--menu').classList.toggle('active')
+}
+
+function search(){
+  document.querySelector('.search').classList.toggle('open')
+  document.querySelector('.searchbar').classList.toggle('active')
+  document.querySelector('.searchbar__label').classList.toggle('active')
+  document.querySelector('.searchbar__input').classList.toggle('active')
+  document.querySelector('.searchbar__input').value = '';
+}
