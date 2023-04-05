@@ -42,6 +42,7 @@
   </head>
 
   <body>
+    <div class="background"></div>
     <header class="header">
       <section class="header container">
         <nav class="nav">
@@ -66,20 +67,72 @@
         </nav>
         <div class="menu">
           <ul class="menu__list">
+            <li class="menu__btn">
+              <button class="menu__button">Create a List</button>
+            </li>
+            <li class="menu__item menu__item--hidden">Find a Couple</li>
             <li class="menu__item">Brands</li>
-            <li class="menu__item">Products</li>
-            <li class="menu__item">Funds</li>
-            <li class="menu__item">Travel & Experiences</li>
-            <li class="menu__item">Showrooms</li>
-            <li class="menu__item">Inspiration</li>
-            <li class="menu__item">Collections</li>
-            <li class="menu__item">About</li>
+            <li class="menu__item">
+              <div class="menu__option">Products</div>
+              <img class="rightArrow" src="img/right.png"/>
+            </li>
+            <li class="menu__item">
+              <div class="menu__option">Funds</div>
+              <img class="rightArrow" src="img/right.png"/>
+            </li>
+            <li class="menu__item">
+              <div class="menu__option">Travel & Experiences</div>
+              <img class="rightArrow" src="img/right.png"/>
+            </li>
+            <li class="menu__item">
+              <div class="menu__option">Showrooms</div>
+              <img class="rightArrow" src="img/right.png"/>
+            </li>
+            <li class="menu__item">
+              <div class="menu__option">Inspiration</div>
+              <img class="rightArrow" src="img/right.png"/>
+            </li>
+            <li class="menu__item">
+              <div class="menu__option">Collections</div>
+              <img class="rightArrow" src="img/right.png"/>
+            </li>
+            <li class="menu__item">
+              <div class="menu__option">About</div>
+              <img class="rightArrow" src="img/right.png"/>
+            </li>
+            <li class="menu__socials">
+              <a href="https://www.pinterest.co.uk/weddingshopuk/"
+                  target="blank"
+                  ><img class="footer__socials" src="img/pinterest.jpg"
+                /></a>
+                <a href="https://facebook.com/theweddingshop" target="blank"
+                  ><img class="footer__socials" src="img/facebook.jpg"
+                /></a>
+                <a
+                  href="https://www.youtube.com/channel/UCID13-6OQt9ubZq2OZR2cvQ/featured"
+                  target="blank"
+                  ><img class="footer__socials" src="img/youtube.jpg"
+                /></a>
+                <a
+                  href="https://www.instagram.com/theweddingshopuk/"
+                  target="blank"
+                  ><img class="footer__socials" src="img/instagram.jpg"
+                /></a>
+            </li>
           </ul>
         </div>
       </section>
     </header>
 
     <main>
+
+      <div class="searchbar">
+        <div class="searchbar__container">
+          <label class="searchbar__label">Search:</label>
+          <input class="searchbar__input"/>
+        </div>
+      </div>
+      
       <section class="hero">
         <img class="hero__img" src="img/hero2.jpg" />
         <h1 class="hero__title hero__title--withShadow">About Us</h1>
