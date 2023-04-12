@@ -10,6 +10,11 @@
     @include media(">=lg") {
       height: 125px;
     }
+
+    &__socials {
+        padding-right: 30px;
+        height: 20px;
+    }
 }
   
 .hamburger {
