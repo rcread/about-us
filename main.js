@@ -62,7 +62,7 @@ function scrollToTop() {
   window.scrollTo(0, 0);
 }
 
-function showMenu(){
+function toggleMenu(){
   document.querySelector('.hamburger').classList.toggle('open')
   document.querySelector('.menu__list').classList.toggle('active')
   document.querySelector('.hamburger__img').classList.toggle('active')
@@ -80,4 +80,16 @@ function search(){
   document.querySelector('.searchbar__label').classList.toggle('active')
   document.querySelector('.searchbar__input').classList.toggle('active')
   document.querySelector('.searchbar__input').value = '';
+}
+
+function closeMenu() {
+  document.querySelector('.hamburger').classList.remove('open')
+  document.querySelector('.menu__list').classList.remove('active')
+  document.querySelector('.hamburger__img').classList.remove('active')
+  document.querySelector('.hamburger__close').classList.remove('active')
+  document.querySelector('.menu').classList.remove('active')
+  document.querySelector('.menu__button').classList.remove('active')
+  document.querySelector('body').classList.remove('active')
+  document.querySelector('.background').classList.remove('active')
+  document.querySelector('.control__option--menu, .create--menu, .create__list--menu').classList.remove('active')
 }

@@ -42,11 +42,11 @@
   </head>
 
   <body>
-    <div class="background"></div>
+    <div class="background" onclick="closeMenu()"></div>
     <header class="header">
       <section class="header container">
         <nav class="nav">
-          <div class="nav__column search" id="search" onclick="search()" onclick="lockScreen">
+          <div class="nav__column search" id="search" onclick="search()">
             <img class="search__img" src="img/search.svg" />
           </div>
           <a href="index.html" class="nav__column logo">
@@ -59,13 +59,13 @@
             <div class="control__option create">
               <div class="create__list">Create a List</div>
             </div>
-            <button class="hamburger" onclick="showMenu()">
+            <button class="hamburger" onclick="toggleMenu()">
               <img class="hamburger__img" src="img/menu.svg" />
               <img class="hamburger__close" src="img/close.png"/>
             </button> 
           </div>
         </nav>
-        <div class="menu">
+        <div class="menu" onclick="closeMenu()">
           <ul class="menu__list">
             <li class="menu__btn">
               <button class="menu__button">Create a List</button>
@@ -103,20 +103,20 @@
             <li class="menu__socials">
               <a href="https://www.pinterest.co.uk/weddingshopuk/"
                   target="blank"
-                  ><img class="footer__socials" src="img/pinterest.jpg"
+                  ><img class="footer__socials" src="img/pinterest.png"
                 /></a>
                 <a href="https://facebook.com/theweddingshop" target="blank"
-                  ><img class="footer__socials" src="img/facebook.jpg"
+                  ><img class="footer__socials" src="img/facebook.png"
                 /></a>
                 <a
                   href="https://www.youtube.com/channel/UCID13-6OQt9ubZq2OZR2cvQ/featured"
                   target="blank"
-                  ><img class="footer__socials" src="img/youtube.jpg"
+                  ><img class="footer__socials" src="img/youtube.png"
                 /></a>
                 <a
                   href="https://www.instagram.com/theweddingshopuk/"
                   target="blank"
-                  ><img class="footer__socials" src="img/instagram.jpg"
+                  ><img class="footer__socials" src="img/instagram.png"
                 /></a>
             </li>
           </ul>
