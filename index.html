@@ -41,8 +41,8 @@
     </style>
   </head>
 
-  <body>
-    <div class="background" onclick="closeMenu()"></div>
+  <body class="body body__active">
+    <div class="background" onclick="toggleMenu()"></div>
     <header class="header">
       <section class="header container">
         <nav class="nav">
@@ -65,7 +65,7 @@
             </button> 
           </div>
         </nav>
-        <div class="menu" onclick="closeMenu()">
+        <div class="menu" onclick="toggleMenu()">
           <ul class="menu__list">
             <li class="menu__btn">
               <button class="menu__button">Create a List</button>
