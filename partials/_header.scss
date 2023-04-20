@@ -175,7 +175,6 @@
         z-index: 5;
         transition: ease-in-out 0.8s;
       }
-      
     }
   
     &__list {
@@ -198,6 +197,7 @@
           animation: slide 0.8s forwards;
           animation-delay: 1s;
           transition: 1s ease-in-out;
+          height: 100vh;
         }
     }
   
@@ -316,7 +316,7 @@
     position: fixed;
     right: 0;
     transition: 0.8s ease-in-out;
-    height: 100%;
+    height: 100vh;
 }
     
 .menu__option {
