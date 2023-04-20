@@ -160,6 +160,7 @@
     align-items: center;
     margin: 0;
     font-family: $font-regular;
+    top: 0;
   
     @include media("<lg") {
       position: absolute;
@@ -170,29 +171,30 @@
       transition: 0.8s ease-in-out;
 
       &.active {
-        position: fixed;
+        position: absolute;
         z-index: 5;
         transition: ease-in-out 0.8s;
       }
+      
     }
   
     &__list {
       display: flex;
+      position: fixed;
       justify-content: space-evenly;
       width: 100%;
       padding: 0px;
       margin: 0px;
+      z-index: 5;
   
       @include media("<lg") {
           flex-direction: column;
           top: 0;
           background-color: $seashell;
           position: absolute;
-          z-index: 5;
           padding: 64px 16px 16px;
           justify-content: left;
           width: 238px;
-          height: 100%;
           right: -500px;
           animation: slide 0.8s forwards;
           animation-delay: 1s;
@@ -257,7 +259,6 @@
         }
 
         &--hidden {
-
             @include media (">=lg") {
             display: none;
             }
@@ -277,18 +278,20 @@
     }
 
     &__button {
-        display: none; 
+        display: fixed;
+        right: -500px; 
+        color: white;
+        background-color: $tws_blue;
+        font-family: $font-regular;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        border: 0px;
+        padding: 10px 16px;
+        margin-bottom: 30px;  
 
         &.active {
             display: block;
-            font-family: $font-regular;
-            letter-spacing: 0.4px;
-            text-transform: uppercase;
-            color: white;
-            background-color: $tws_blue;
-            border: 0px;
-            padding: 10px 16px;
-            margin-bottom: 30px;  
+             
         }
         
         &:hover {
@@ -312,6 +315,7 @@
     position: fixed;
     right: 0;
     transition: 0.8s ease-in-out;
+    height: 100%;
 }
     
 .menu__option {
