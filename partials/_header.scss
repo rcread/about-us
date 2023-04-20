@@ -51,7 +51,7 @@
         }
 
         &--closed {
-            z-index: 6;
+            z-index: 1;
             
             @include media (">=lg") {
             display: none;
@@ -180,7 +180,6 @@
   
     &__list {
       display: flex;
-      position: fixed;
       justify-content: space-evenly;
       width: 100%;
       padding: 0px;
@@ -222,7 +221,7 @@
         list-style: none;
         padding: 20px 0px;
 
-        @include media(">lg") {
+        @include media(">=lg") {
             display: none;
         }
     }
@@ -278,7 +277,6 @@
     }
 
     &__button {
-        display: fixed;
         right: -500px; 
         color: white;
         background-color: $tws_blue;
@@ -287,11 +285,14 @@
         text-transform: uppercase;
         border: 0px;
         padding: 10px 16px;
-        margin-bottom: 30px;  
+        margin-bottom: 30px;
+        
+        @include media (">=lg") {
+            display: none;
+        }
 
         &.active {
             display: block;
-             
         }
         
         &:hover {
