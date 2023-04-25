@@ -72,9 +72,25 @@ function toggleMenu(){
     document.querySelector('.menu__button').classList.toggle('active')
     document.querySelector('body').classList.toggle('body--active')
     document.querySelector('.background').classList.toggle('active')
-    document.querySelector('.control__option--menu, .create--menu, .create__list--menu').classList.toggle('active')
   }
 }
+
+// function toggleMenu(){
+//   if (window.innerWidth < 1024){
+
+//   const selectors = [
+//     '.hamburger',
+//     '.menu__list',
+//     '.hamburger__img',
+//     '.hamburger__close',
+//     '.menu',
+//     '.menu__button',
+//     'body',
+//     '.background',
+//   ];
+//   selectors.forEach(selector => document.querySelector(selector).classList.toggle('active'));
+//   }
+// }
 
 function search(){
   document.querySelector('.search').classList.toggle('open')
