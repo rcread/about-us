@@ -70,7 +70,7 @@ function toggleMenu(){
     document.querySelector('.hamburger__close').classList.toggle('active')
     document.querySelector('.menu').classList.toggle('active')
     document.querySelector('.menu__button').classList.toggle('active')
-    document.querySelector('body').classList.toggle('body--active')
+    document.querySelector('body').classList.toggle('active')
     document.querySelector('.background').classList.toggle('active')
   }
 }
@@ -97,16 +97,7 @@ function search(){
   document.querySelector('.searchbar').classList.toggle('active')
   document.querySelector('.searchbar__label').classList.toggle('active')
   document.querySelector('.searchbar__input').classList.toggle('active')
-  document.querySelector('.searchbar__input').value = '';
+  document.querySelector('.searchbar__input').value = ''
+  document.querySelector('.close-search').classList.toggle('active')
   document.querySelector('.body').classList.toggle('active')
 }
-
-// const searchContainer = document.getElementsByClassName("searchbar");
-
-// document.addEventListener("click", (event) => {
-//   if (!searchContainer.containers(event.target)) {
-//     searchContainer.classList.remove("active");
-//   }
-// });
-
-// working on the above - click anywhere except the searchbar and it should disappear

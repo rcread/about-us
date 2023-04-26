@@ -367,7 +367,7 @@
     display: none;
     width: 100%;
     background-color: $tws_blue;
-    z-index: 2;
+    z-index: 4;
     margin: 0 auto;
 
     @include media (">=lg") {
