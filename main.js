@@ -70,8 +70,11 @@ function toggleMenu(){
     document.querySelector('.hamburger__close').classList.toggle('active')
     document.querySelector('.menu').classList.toggle('active')
     document.querySelector('.menu__button').classList.toggle('active')
-    document.querySelector('body').classList.toggle('active')
-    document.querySelector('.background').classList.toggle('active')
+    document.querySelector('.body').classList.toggle('active')
+
+    if (!document.querySelector('.body').classList.toggle('active')) {
+      document.querySelector('.body').classList.toggle('active')
+    }
   }
 }
 
