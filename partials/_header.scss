@@ -31,20 +31,33 @@
     }
 
     &__close {
-    display: none;
-    background-color: transparent;
+        top: 0;
+        margin: 0;
+        border: 0;
+        position: absolute;
+        right: -100px;
+        width: 16px;
+        animation: slide 0.8s forwards;
+        animation-delay: 1s;
+        transition: 0.8s ease-in-out;
+        
+        &.active {
+            display: block;
+            cursor: pointer;
+            position: absolute;
+            margin: 16px 120px 0px;
+            right: 0;
+            transition: ease-in-out 0.8s;
+            z-index: 10;
+        }
     }
 
-    &__close.active {
-    display: block;
-    margin: 16px 16px 0px;
-    cursor: pointer;
-    z-index: 10;
-    }
+    
 
     &__img {
         margin: 16px 16px 0px;
         cursor: pointer;
+        transition: ease-in-out 0.8s;
 
         @include media(">=md") {
             margin: 19px 16px 0px;
@@ -59,7 +72,8 @@
         }
 
         &.active {
-            display: none;
+            opacity: 0;
+            transition: ease-in-out 0.8s;
         }
     }
 }
@@ -317,6 +331,7 @@
     right: 0;
     transition: 0.8s ease-in-out;
     height: 100vh;
+    z-index: 5;
 }
     
 .menu__option {
