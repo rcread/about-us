@@ -41,14 +41,14 @@
     </style>
   </head>
 
-  <body>
+  <body class="body">
+    <div class="background" onclick="toggleMenu()"></div>
+    <div class="close-search" onclick="search()"></div>
     <header class="header">
       <section class="header container">
         <nav class="nav">
-          <div class="nav__column search" id="search">
-            <a href="search.html">
-              <img class="search__img" src="img/search.svg" />
-            </a>
+          <div class="nav__column search" id="search" onclick="search()">
+            <img class="search__img" src="img/search.svg" />
           </div>
           <a href="index.html" class="nav__column logo">
             <img class="logo__bow" src="img/Bow.png" />
@@ -60,27 +60,82 @@
             <div class="control__option create">
               <div class="create__list">Create a List</div>
             </div>
-            <div class="hamburger">
+            <button class="hamburger" onclick="toggleMenu()">
               <img class="hamburger__img" src="img/menu.svg" />
-            </div>
+            </button> 
           </div>
         </nav>
-        <div class="menu">
+        <div class="menu" onclick="toggleMenu()">
+          <button class="hamburger" onclick="toggleMenu()">
+            <img class="hamburger__close" src="img/close.svg"/>
+          </button> 
           <ul class="menu__list">
+            <li class="menu__btn">
+              <button class="menu__button">Create a List</button>
+            </li>
+            <li class="menu__item menu__item--hidden">Find a Couple</li>
             <li class="menu__item">Brands</li>
-            <li class="menu__item">Products</li>
-            <li class="menu__item">Funds</li>
-            <li class="menu__item">Travel & Experiences</li>
-            <li class="menu__item">Showrooms</li>
-            <li class="menu__item">Inspiration</li>
-            <li class="menu__item">Collections</li>
-            <li class="menu__item">About</li>
+            <li class="menu__item">
+              <div class="menu__option">Products</div>
+              <img class="rightArrow" src="img/right.svg"/>
+            </li>
+            <li class="menu__item">
+              <div class="menu__option">Funds</div>
+              <img class="rightArrow" src="img/right.svg"/>
+            </li>
+            <li class="menu__item">
+              <div class="menu__option">Travel & Experiences</div>
+              <img class="rightArrow" src="img/right.svg"/>
+            </li>
+            <li class="menu__item">
+              <div class="menu__option">Showrooms</div>
+              <img class="rightArrow" src="img/right.svg"/>
+            </li>
+            <li class="menu__item">
+              <div class="menu__option">Inspiration</div>
+              <img class="rightArrow" src="img/right.svg"/>
+            </li>
+            <li class="menu__item">
+              <div class="menu__option">Collections</div>
+              <img class="rightArrow" src="img/right.svg"/>
+            </li>
+            <li class="menu__item">
+              <div class="menu__option">About</div>
+              <img class="rightArrow" src="img/right.svg"/>
+            </li>
+            <li class="menu__socials">
+              <a href="https://www.pinterest.co.uk/weddingshopuk/"
+                  target="blank"
+                  ><img class="header__socials" src="img/pinterest.png"
+                /></a>
+                <a href="https://facebook.com/theweddingshop" target="blank"
+                  ><img class="header__socials" src="img/facebook.png"
+                /></a>
+                <a
+                  href="https://www.youtube.com/channel/UCID13-6OQt9ubZq2OZR2cvQ/featured"
+                  target="blank"
+                  ><img class="header__socials" src="img/youtube.png"
+                /></a>
+                <a
+                  href="https://www.instagram.com/theweddingshopuk/"
+                  target="blank"
+                  ><img class="header__socials" src="img/instagram.png"
+                /></a>
+            </li>
           </ul>
         </div>
       </section>
     </header>
 
     <main>
+
+      <div class="searchbar">
+        <div class="searchbar__container">
+          <label class="searchbar__label">Search:</label>
+          <input class="searchbar__input"/>
+        </div>
+      </div>
+      
       <section class="hero">
         <img class="hero__img" src="img/hero2.jpg" />
         <h1 class="hero__title hero__title--withShadow">About Us</h1>

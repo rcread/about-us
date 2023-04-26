@@ -1,0 +1,438 @@
+.header {
+    height: 48px;
+    font-weight: 400;
+    font-size: $nav-font-size;
+  
+    @include media(">=md") {
+      height: 56px;
+    }
+  
+    @include media(">=lg") {
+      height: 125px;
+    }
+
+    &__socials {
+        padding-right: 30px;
+        height: 20px;
+    }
+}
+  
+.hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    z-index: 10;
+      
+    @include media(">=lg") {
+    display: none;
+    }
+
+    &__close {
+        top: 0;
+        margin: 0;
+        border: 0;
+        position: absolute;
+        right: -100px;
+        width: 16px;
+        animation: slide 0.8s forwards;
+        animation-delay: 1s;
+        transition: 0.8s ease-in-out;
+        
+        &.active {
+            display: block;
+            cursor: pointer;
+            position: absolute;
+            margin: 16px 120px 0px;
+            right: 0;
+            transition: ease-in-out 0.8s;
+            z-index: 10;
+        }
+    }
+
+    
+
+    &__img {
+        margin: 16px 16px 0px;
+        cursor: pointer;
+        transition-delay: 0.5s;
+
+        @include media(">=md") {
+            margin: 19px 16px 0px;
+        }
+
+        &--closed {
+            z-index: 1;
+            
+            @include media (">=lg") {
+            display: none;
+            }
+        }
+
+        &.active {
+            opacity: 0;
+            transition: 0.3s;
+        }
+    }
+}
+  
+.nav {
+    line-height: 20px;
+    color: $tws_black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    position: relative;
+    height: 48px;
+    font-family: $font-regular;
+  
+    @include media(">=md") {
+      height: 56px;
+    }
+  
+    @include media(">=lg") {
+      line-height: 24px;
+      height: 61px;
+    }
+  
+    &__column {
+      width: 33.33%;
+    }
+}
+  
+.logo {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  
+    &__bow {
+      height: 10px;
+      width: 19px;
+      margin: 12px 0px 0px;
+  
+      @include media(">=lg") {
+        height: 19px;
+        width: 37px;
+        margin: 16px 0px 0px;
+      }
+  
+      &--large {
+        height: 30px;
+        width: 58px;
+      }
+    }
+  
+    &__name {
+      width: 117px;
+      height: 6.5px;
+      margin: 7px 0px 0px;
+  
+      @include media(">=lg") {
+        width: 220px;
+        height: 12px;
+        margin: 13px 0px 0px;
+      }
+    }
+}
+  
+.create {
+    background: $tws_blue;
+    color: $tws_white;
+    text-transform: uppercase;
+    width: 94px;
+    padding: 4px 16px;
+    margin-right: 32px;
+  
+    &:hover {
+      background: $tws_coral;
+    }
+  
+    &__list {
+      text-align: center;
+      font-weight: bold;
+      letter-spacing: 0.4px;
+    }
+}
+  
+.create,
+.findCouple {
+    display: none;
+  
+    @include media(">=lg") {
+      display: inline-block;
+    }
+}
+  
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: $font-regular;
+    top: 0;
+  
+    @include media("<lg") {
+      position: absolute;
+      right: -100px;
+      width: 100px;
+      animation: slide 0.8s forwards;
+      animation-delay: 1s;
+      transition: 0.8s ease-in-out;
+
+      &.active {
+        position: absolute;
+        z-index: 5;
+        transition: ease-in-out 0.8s;
+      }
+    }
+                                              
+    &__list {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+      z-index: 5;
+  
+      @include media("<lg") {
+          flex-direction: column;
+          top: 0;
+          background-color: $seashell;
+          position: absolute;
+          padding: 64px 16px 16px;
+          justify-content: left;
+          width: 238px;
+          right: -500px;
+          animation: slide 0.8s forwards;
+          animation-delay: 1s;
+          transition: 1s ease-in-out;
+          height: 100vh;
+        }
+    }
+  
+    &__item {
+      margin: 32px 8px 0px;
+      padding: 0px 0px 8px;
+      color: $tws_black;
+      border-bottom: 2px solid $tws_white;
+      letter-spacing: 0.8px;
+      white-space: nowrap;
+      list-style: none;
+      line-height: 20px;
+      cursor: pointer;
+  
+      &:hover {
+        border-bottom: 2px solid $tws_coral;
+      }
+    }
+  
+    &__socials {
+        list-style: none;
+        padding: 20px 0px;
+
+        @include media(">=lg") {
+            display: none;
+        }
+    }
+
+    &__item {
+        margin: 32px 8px 0px;
+        padding: 0px 0px 8px;
+        color: $tws_black;
+        border-bottom: 2px solid $tws_white;
+        letter-spacing: 0.8px;
+        white-space: nowrap;
+        list-style: none;
+        line-height: 20px;
+        cursor: pointer;
+
+        &:hover {
+            border-bottom: 2px solid $tws_coral;
+        }
+
+        @include media("<lg") {
+            font-size: 14px;
+            border-bottom: none;
+            padding: 10px 0px;
+            margin: 0;
+            letter-spacing: 0;
+            width: 220px;
+            display: flex;
+            flex-direction: row;
+
+            &:hover {
+            text-decoration: underline;
+            border-bottom: none;
+            }
+        }
+
+        &--hidden {
+            @include media (">=lg") {
+            display: none;
+            }
+        }
+    }
+
+    &__link {
+        justify-content: space-between;
+        border: none;
+        background-color: $seashell;
+        font-family: $font-regular;
+        width: 100%;
+    }
+
+    &__btn {
+        list-style: none;
+    }
+
+    &__button {
+        right: -500px; 
+        color: white;
+        background-color: $tws_blue;
+        font-family: $font-regular;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        border: 0px;
+        padding: 10px 16px;
+        margin-bottom: 30px;
+        
+        @include media (">=lg") {
+            display: none;
+        }
+
+        &.active {
+            display: block;
+        }
+        
+        &:hover {
+            background-color: $tws_coral;
+            border: 0px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}
+  
+.menu.active {
+    display: block;
+    transition: ease-in-out 0.8s;
+    height: 100%;
+    width: 100%;
+}
+    
+.menu__list.active {
+    display: block;
+    position: fixed;
+    right: 0;
+    transition: 0.8s ease-in-out;
+    height: 100vh;
+    z-index: 5;
+}
+    
+.menu__option {
+    width: 90%;
+}
+    
+.rightArrow {
+    height: 16px;
+    width: 11px;
+    padding: 0px 0px 0px 20px;
+
+    @include media (">=lg") {
+    display: none;
+    }
+}
+  
+.search__img {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 17px 0px 7px 17px;
+
+    @include media(">=md") {
+        margin: 21px 0px 7px 17px;
+    }
+
+    @include media(">=lg") {
+        margin: 33px 0px 16px 33px;
+    }
+}
+   
+.searchbar {
+    display: none;
+    width: 100%;
+    background-color: $tws_blue;
+    z-index: 4;
+    margin: 0 auto;
+
+    @include media (">=lg") {
+        display: none;
+    }
+
+    &__container {
+        max-width: 1250px;
+        width: 95%;
+        padding: 0;
+        margin: 0;
+
+        @include media (">=lg") {
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+
+    &__label {
+        background-color: $tws_blue;
+        color: $tws_white;
+        display: none;
+        font-family: $font-regular;
+        margin: 15px 0px 0px 15px;
+        width: 100%;
+
+        &.active {
+            display: flex;
+            z-index: 2px;
+            color: white;
+        }
+    }
+
+    &__input {
+        background-color: $tws_blue;
+        line-height: 50px;
+        border: none;
+        border-bottom: 0.2px solid #ffffff5b;
+        display: none;
+        margin: 0px 0px 15px 15px;
+        font-family: $font-regular;
+        width: 100%;
+        color: $tws_white;
+        font-size: 20px;
+
+        @include media (">=lg") {
+            width: 98%;
+            max-width: 1250px;
+        }
+
+        &.active {
+            display: flex;
+
+            &:focus {
+                outline: none;
+                background-color: transparent;
+            }
+        }
+    }
+
+    &.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        color: $tws_white;
+        caret-color: $tws_white;
+    }
+}

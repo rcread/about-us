@@ -61,3 +61,49 @@ function scrollFunction() {
 function scrollToTop() {
   window.scrollTo(0, 0);
 }
+
+function toggleMenu(){
+  if (window.innerWidth <1024) {
+    document.querySelector('.hamburger').classList.toggle('open')
+    document.querySelector('.menu__list').classList.toggle('active')
+    document.querySelector('.hamburger__img').classList.toggle('active')
+    document.querySelector('.hamburger__close').classList.toggle('active')
+    document.querySelector('.menu').classList.toggle('active')
+    document.querySelector('.menu__button').classList.toggle('active')
+    document.querySelector('.body').classList.toggle('active')
+
+    if (!document.querySelector('.body').classList.toggle('active')) {
+      document.querySelector('.body').classList.toggle('active')
+    }
+  }
+}
+
+// function toggleMenu(){
+//   if (window.innerWidth < 1024){
+
+//   const selectors = [
+//     '.hamburger',
+//     '.menu__list',
+//     '.hamburger__img',
+//     '.hamburger__close',
+//     '.menu',
+//     '.menu__button',
+//     'body',
+//     '.background',
+//   ];
+//   selectors.forEach(selector => document.querySelector(selector).classList.toggle('active'));
+//   }
+// }
+
+function search(){
+  document.querySelector('.search').classList.toggle('open')
+  document.querySelector('.searchbar').classList.toggle('active')
+  document.querySelector('.searchbar__label').classList.toggle('active')
+  document.querySelector('.searchbar__input').classList.toggle('active')
+  document.querySelector('.searchbar__input').value = ''
+  document.querySelector('.close-search').classList.toggle('active')
+  
+  if (!document.querySelector('.body').classList.toggle('active')) {
+    document.querySelector('.body').classList.toggle('active')
+  }
+}
