@@ -102,5 +102,8 @@ function search(){
   document.querySelector('.searchbar__input').classList.toggle('active')
   document.querySelector('.searchbar__input').value = ''
   document.querySelector('.close-search').classList.toggle('active')
-  document.querySelector('.body').classList.toggle('active')
+  
+  if (!document.querySelector('.body').classList.toggle('active')) {
+    document.querySelector('.body').classList.toggle('active')
+  }
 }
